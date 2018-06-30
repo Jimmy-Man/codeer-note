@@ -19,7 +19,7 @@ class ClassName:
   1、直接在类中定义
   2、在构造函数中定义
 ```
-Python 没有访问控制 没有提供私有属性的功能(全靠自学[规范])
+Python 没有访问控制 没有提供私有属性的功能(全靠自觉[规范])
 ```python
     def __init__(self,name,age,height):
         self.name = name    ##没有下划线  public 可以公开访问
