@@ -27,3 +27,19 @@ Python 没有访问控制 没有提供私有属性的功能(全靠自觉[规范]
         self.__height = height  ## 二条下划线    private 私有属性(其实依然能从外部访问)
 ```
 ### 定义类的方法
+```python
+    ## 定义函数
+    def methodName(selfe):  ## 公开方法
+        return 'public'
+    def _methodNmae2(self):
+        return 'protect'
+    def __methodName3(self):
+        return 'private'
+```
+### 类的继承与多态
+  ```
+  继承 子类能继承分类全部功能
+  多态 
+  多重继续
+  
+  ```
