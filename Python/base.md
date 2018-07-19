@@ -19,65 +19,83 @@ chr(25991)
 #!-*- coding: UTF-8 -*-
 
 ### 输入输出
+```python
 name = input("Please inter your name:　")
-# print("Hi",name)
-# print(len(name))
-
+print("Hi",name)
+print(len(name))
+```
 ### Python 字符串和编码
 #ord()函数获取字符的整数表示
 #chr()函数把编码转换为对应的字符
+```python
 ord("a")
 chr(65)
 chr(25991)
+```
 
 #### ASCII编码和Unicode编码的区别：ASCII编码是1个字节，而Unicode编码通常是2个字节
 #### 于Python的字符串类型是str，在内存中以Unicode表示，一个字符对应若干个字节。如果要在网络上传输，或者保存到磁盘上，就需要把str变为以字节为单位的bytes
 #### 以Unicode表示的str通过encode()方法可以编码为指定的bytes
 ### encode()
 ### deconde()
-
+```python
 'ABC'.encode('ascii')
 '中文'.encode('utf-8')
 b'\xe4\xb8\xad\xe6\x96\x87'.decode('utf-8')
+```
 ### 可以传入errors='ignore'忽略错误的字节：
 b'\xe4\xb8\xad\xff'.decode('utf-8', errors='ignore')
 #### 纯英文的str可以用ASCII编码为bytes，内容是一样的，含有中文的str可以用UTF-8编码为bytes。含有中文的str无法用ASCII编码，因为中文编码的范围超过了ASCII编码的范围，Python会报错。在bytes中，无法显示为ASCII字符的字节，用\x##显示。
-
+```python
 st = "你好".encode("utf-8")
 print(st)
 print(len(st))
 ### len() 要计算str包含多少个字符
 len("ABC")
-
+```
 ### 字符格式化 %
 'Hi, %s, you have $%d.' % ('Michael', 1000000)
 ### 或者　使用字符串的format()方法
+```python
 'Hello, {0}, 成绩提升了 {1:.1f}%'.format('小明', 17.125)
-
+```
 
 
 ## List(列表) ['',''..]   tuple(元组) ('',''...)
 ### Start list ==========================================================
 #### list是一种有序的集合，可以随时添加和删除其中的元素。
+```python
 coress = ['Englist','Matchs']
-
+```
 ### len()函数可以获得list元素的个数
+```python
 list_var = ['var1','var2']
 len(list_var)
+```
 ### append() 追加元素到末尾
+```python
 list_var.append('var3')
+```
 ### insert(index, value) 可以把元素插入到指定的位置 索引从0开始
+```python
 list_var.insert(2,'var_insert2')
+```
 
 ### 要删除list末尾的元素，用pop()方法
+```python
 list_var.pop()
+```
 ### 删除指定位置的元素,用pop(i)
+```python
 list_var.pop(2)
+```
 ### End list  ==========================================================
 
 ### Start tuple -------------------------------------------------------
 ###另一种有序列表叫元组：tuple。tuple和list非常类似，但是tuple一旦初始化就不能修改，元组使用小括号
+```python
 tuple_var = ('Jimmy','Kimmy',['English','Match'])
+```
 ### End   tuple -------------------------------------------------------
 
 ### 字典(dict) {key:value,key2:value2,...}   与集合set set()
