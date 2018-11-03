@@ -1,6 +1,6 @@
 Symfony 笔记：
 
-###安装 
+### 安装 
 
 composer 安装
     --website-skeleton是web应用优化版
@@ -23,7 +23,7 @@ Lnmp或者LAMP环境下：
 待继.....
 
 ---------------------------------------------------------------
-####检查服务器环境要求
+#### 检查服务器环境要求
 
 ```
 cd your-project/
@@ -37,13 +37,13 @@ composer remove symfony/requirements-checker
 ```
 -----------------------------------------------------------------
 
-####检查安全漏洞
+#### 检查安全漏洞
 ```
 cd my-project/
 composer require sensiolabs/security-checker --dev
 ```
 
-####Symfony演示应用程序
+#### Symfony演示应用程序
 https://github.com/symfony/demo
 ```
 composer create-project symfony/symfony-demo
