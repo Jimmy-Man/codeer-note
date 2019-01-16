@@ -18,4 +18,8 @@ export  DISPLAY=:99
 
 /usr/bin/google-chrome-stable http://www.investopedia.com         //chrome 浏览www.investopedia.com
 ```
+或者
+```
+xvfb-run 需要执行的命令
+```
 #### 更详细会在后面进行补充
