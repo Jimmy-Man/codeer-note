@@ -1,0 +1,2008 @@
+72005:C 01 Nov 2019 21:53:24.037 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+72005:C 01 Nov 2019 21:53:24.038 # Redis version=5.0.6, bits=64, commit=00000000, modified=0, pid=72005, just started
+72005:C 01 Nov 2019 21:53:24.038 # Configuration loaded
+72006:M 01 Nov 2019 21:53:24.040 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6381
+ |    `-._   `._    /     _.-'    |     PID: 72006
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+72006:M 01 Nov 2019 21:53:24.050 # Server initialized
+72006:M 01 Nov 2019 21:53:24.050 * Ready to accept connections
+72006:S 01 Nov 2019 21:59:21.862 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+72006:S 01 Nov 2019 21:59:21.863 * REPLICAOF 127.0.0.1:6379 enabled (user request from 'id=3 addr=127.0.0.1:59871 fd=7 name= age=45 idle=0 flags=N db=0 sub=0 psub=0 multi=-1 qbuf=42 qbuf-free=32726 obl=0 oll=0 omem=0 events=r cmd=slaveof')
+72006:S 01 Nov 2019 21:59:22.298 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:22.299 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:22.299 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:22.300 * Master replied to PING, replication can continue...
+72006:S 01 Nov 2019 21:59:22.301 * Trying a partial resynchronization (request ca77ef82252fe8d7f53198d52b6c501790a883ac:1).
+72006:S 01 Nov 2019 21:59:22.304 * Full resync from master: e018ce1de21d62ccc28f61f015f061384ebe1916:0
+72006:S 01 Nov 2019 21:59:22.304 * Discarding previously cached master state.
+72006:S 01 Nov 2019 21:59:22.360 # I/O error reading bulk count from MASTER: Resource temporarily unavailable
+72006:S 01 Nov 2019 21:59:23.309 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:23.309 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:23.310 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:23.310 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:24.323 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:24.323 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:24.324 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:24.325 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:25.332 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:25.333 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:25.333 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:25.334 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:26.346 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:26.346 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:26.347 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:26.347 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:27.361 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:27.362 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:27.362 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:27.363 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:28.376 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:28.377 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:28.377 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:28.377 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:29.392 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:29.392 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:29.393 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:29.394 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:30.404 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:30.404 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:30.405 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:30.406 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:31.420 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:31.420 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:31.421 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:31.422 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:32.434 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:32.435 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:32.435 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:32.436 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:33.448 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:33.448 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:33.449 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:33.450 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:34.462 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:34.463 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:34.463 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:34.464 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:35.477 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:35.478 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:35.479 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:35.479 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:36.490 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:36.490 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:36.491 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:36.492 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:37.505 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:37.506 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:37.506 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:37.507 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:38.520 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:38.521 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:38.522 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:38.522 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:39.533 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:39.534 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:39.534 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:39.535 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:40.546 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:40.547 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:40.547 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:40.548 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:41.561 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:41.562 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:41.562 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:41.563 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:42.574 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:42.574 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:42.575 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:42.576 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:43.589 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:43.589 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:43.590 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:43.591 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:44.602 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:44.603 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:44.603 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:44.604 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:45.613 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:45.613 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:45.614 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:45.615 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:46.626 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:46.626 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:46.627 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:46.627 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:47.636 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:47.637 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:47.638 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:47.638 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:48.651 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:48.651 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:48.652 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:48.653 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:49.667 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:49.667 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:49.668 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:49.669 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:50.681 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:50.682 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:50.683 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:50.684 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:51.693 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:51.693 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:51.694 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:51.695 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:52.710 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:52.710 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:52.711 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:52.712 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:53.721 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:53.721 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:53.722 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:53.723 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:54.734 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:54.734 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:54.735 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:54.736 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:55.749 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:55.750 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:55.750 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:55.751 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:56.762 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:56.763 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:56.764 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:56.764 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:57.776 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:57.777 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:57.777 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:57.778 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:58.788 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:58.788 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:58.789 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:58.790 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 21:59:59.801 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 21:59:59.801 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 21:59:59.802 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 21:59:59.803 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:00.813 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:00.814 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:00.814 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:00.815 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:01.825 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:01.825 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:01.826 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:01.827 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:02.839 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:02.840 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:02.841 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:02.842 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:03.850 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:03.851 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:03.851 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:03.852 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:04.863 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:04.863 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:04.864 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:04.865 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:05.877 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:05.878 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:05.878 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:05.879 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:06.889 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:06.890 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:06.891 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:06.891 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:07.903 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:07.904 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:07.905 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:07.905 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:08.919 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:08.920 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:08.920 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:08.921 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:09.931 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:09.931 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:09.932 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:09.933 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:10.942 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:10.943 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:10.944 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:10.945 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:11.956 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:11.956 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:11.957 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:11.958 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:12.973 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:12.973 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:12.974 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:12.974 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:13.989 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:13.989 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:13.990 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:13.990 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:15.001 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:15.002 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:15.003 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:15.003 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:16.017 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:16.017 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:16.018 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:16.019 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:17.030 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:17.030 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:17.031 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:17.032 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:18.043 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:18.044 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:18.045 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:18.045 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:19.058 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:19.059 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:19.060 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:19.061 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:20.073 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:20.073 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:20.074 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:20.075 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:21.088 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:21.088 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:21.089 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:21.090 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:22.101 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:22.102 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:22.103 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:22.103 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:23.117 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:23.117 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:23.118 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:23.119 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:24.129 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:24.129 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:24.130 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:24.131 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:25.145 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:25.145 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:25.146 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:25.147 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:26.158 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:26.158 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:26.159 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:26.160 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:27.169 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:27.169 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:27.170 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:27.171 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:28.183 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:28.184 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:28.185 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:28.185 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:29.194 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:29.195 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:29.195 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:29.196 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:30.206 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:30.206 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:30.207 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:30.208 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:31.221 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:31.222 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:31.222 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:31.223 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:32.232 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:32.232 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:32.233 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:32.234 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:33.248 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:33.249 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:33.250 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:33.250 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:34.260 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:34.261 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:34.261 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:34.262 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:35.275 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:35.275 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:35.276 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:35.277 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:36.287 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:36.287 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:36.288 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:36.289 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:37.300 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:37.301 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:37.301 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:37.302 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:38.314 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:38.314 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:38.315 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:38.316 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:39.328 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:39.329 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:39.329 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:39.330 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:40.339 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:40.340 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:40.341 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:40.341 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:41.352 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:41.352 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:41.353 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:41.354 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:42.367 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:42.367 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:42.368 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:42.369 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:43.378 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:43.379 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:43.380 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:43.380 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:44.394 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:44.395 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:44.395 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:44.396 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:45.408 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:45.408 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:45.409 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:45.410 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:46.420 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:46.420 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:46.421 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:46.422 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:47.432 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:47.433 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:47.433 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:47.435 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:48.445 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:48.445 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:48.446 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:48.447 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:49.460 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:49.461 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:49.461 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:49.462 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:50.475 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:50.475 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:50.476 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:50.477 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:51.489 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:51.490 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:51.491 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:51.492 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:52.501 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:52.501 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:52.502 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:52.503 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:53.516 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:53.517 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:53.517 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:53.518 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:54.528 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:54.529 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:54.530 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:54.531 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:55.543 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:55.543 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:55.544 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:55.545 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:56.557 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:56.558 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:56.559 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:56.560 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:57.572 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:57.572 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:57.573 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:57.574 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:58.587 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:58.587 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:58.588 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:58.589 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:00:59.602 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:00:59.602 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:00:59.603 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:00:59.604 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:01:00.618 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:00.618 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:00.619 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:01:00.620 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:01:01.627 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:01.628 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:01.629 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:01:01.630 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:01:02.641 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:02.642 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:02.642 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:01:02.643 # Error reply to PING from master: '-MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-wri'
+72006:S 01 Nov 2019 22:01:03.653 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:03.654 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:03.655 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:04.666 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:04.666 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:04.667 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:05.679 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:05.680 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:05.681 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:06.696 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:06.696 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:06.697 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:07.709 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:07.709 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:07.710 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:08.724 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:08.724 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:08.725 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:09.740 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:09.740 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:09.741 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:10.753 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:10.753 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:10.754 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:11.765 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:11.766 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:11.767 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:12.780 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:12.781 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:12.782 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:13.796 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:13.797 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:13.797 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:14.807 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:14.807 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:14.808 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:15.821 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:15.822 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:15.822 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:16.836 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:16.837 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:16.841 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:17.855 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:17.856 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:17.857 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:18.870 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:18.870 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:18.871 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:19.884 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:19.884 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:19.885 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:20.899 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:20.899 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:20.900 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:21.915 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:21.915 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:21.916 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:22.929 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:22.929 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:22.930 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:23.943 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:23.943 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:23.944 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:24.956 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:24.957 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:24.958 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:25.971 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:25.972 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:25.973 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:26.983 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:26.984 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:26.985 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:27.995 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:27.996 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:27.997 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:29.012 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:29.012 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:29.013 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:30.027 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:30.028 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:30.029 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:31.043 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:31.044 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:31.045 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:32.059 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:32.060 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:32.061 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:33.074 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:33.075 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:33.076 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:34.088 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:34.089 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:34.089 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:35.103 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:35.104 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:35.104 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:36.114 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:36.115 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:36.116 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:37.130 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:37.130 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:37.131 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:38.145 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:38.145 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:38.146 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:39.156 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:39.157 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:39.158 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:40.172 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:40.172 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:40.173 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:41.184 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:41.185 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:41.186 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:42.199 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:42.200 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:42.201 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:43.215 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:43.216 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:43.216 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:44.231 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:44.231 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:44.232 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:45.246 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:45.247 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:45.248 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:46.260 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:46.260 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:46.261 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:47.275 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:47.275 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:47.276 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:48.287 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:48.288 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:48.288 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:49.302 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:49.302 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:49.303 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:50.315 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:50.316 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:50.317 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:51.329 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:51.330 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:51.330 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:52.341 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:52.341 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:52.342 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:53.354 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:53.355 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:53.356 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:54.365 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:54.365 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:54.366 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:55.377 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:55.378 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:55.379 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:56.390 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:56.391 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:56.392 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:57.403 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:57.404 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:57.404 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:58.413 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:58.414 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:58.415 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:01:59.426 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:01:59.427 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:01:59.428 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:00.441 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:00.441 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:00.442 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:01.457 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:01.458 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:01.459 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:02.473 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:02.473 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:02.474 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:03.486 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:03.486 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:03.487 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:04.495 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:04.496 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:04.496 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:05.508 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:05.509 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:05.510 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:06.523 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:06.523 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:06.524 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:07.534 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:07.535 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:07.536 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:08.547 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:08.548 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:08.548 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:09.559 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:09.560 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:09.560 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:10.569 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:10.569 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:10.571 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:11.583 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:11.583 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:11.584 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:12.598 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:12.598 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:12.599 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:13.612 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:13.613 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:13.614 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:14.624 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:14.624 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:14.625 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:15.638 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:15.638 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:15.639 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:16.649 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:16.649 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:16.650 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:17.664 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:17.664 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:17.665 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:18.677 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:18.678 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:18.679 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:19.692 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:19.693 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:19.694 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:20.708 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:20.708 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:20.709 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:21.721 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:21.721 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:21.722 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:22.737 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:22.737 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:22.738 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:23.749 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:23.750 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:23.751 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:24.764 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:24.764 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:24.765 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:25.777 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:25.777 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:25.778 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:26.791 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:26.791 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:26.792 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:27.806 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:27.807 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:27.808 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:28.821 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:28.822 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:28.823 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:29.832 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:29.833 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:29.834 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:30.842 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:30.843 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:30.844 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:31.854 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:31.855 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:31.856 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:32.867 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:32.867 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:32.868 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:33.878 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:33.878 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:33.879 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:34.891 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:34.892 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:34.893 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:35.903 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:35.904 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:35.905 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:36.918 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:36.919 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:36.920 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:37.931 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:37.932 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:37.933 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:38.944 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:38.945 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:38.946 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:39.959 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:39.959 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:39.960 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:40.971 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:40.972 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:40.972 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:41.985 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:41.986 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:41.987 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:43.002 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:43.002 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:43.003 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:44.017 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:44.017 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:44.018 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:45.031 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:45.031 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:45.032 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:46.044 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:46.045 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:46.045 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:47.055 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:47.056 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:47.057 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:48.067 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:48.067 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:48.068 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:49.082 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:49.082 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:49.083 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:50.095 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:50.096 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:50.096 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:51.109 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:51.110 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:51.111 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:52.123 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:52.123 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:52.124 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:53.136 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:53.136 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:53.137 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:54.150 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:54.150 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:54.151 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:55.163 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:55.163 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:55.164 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:56.178 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:56.178 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:56.179 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:57.194 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:57.194 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:57.195 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:58.209 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:58.209 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:58.210 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:02:59.220 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:02:59.220 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:02:59.221 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:00.234 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:00.234 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:00.235 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:01.249 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:01.250 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:01.251 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:02.261 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:02.262 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:02.263 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:03.275 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:03.276 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:03.277 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:04.289 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:04.289 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:04.290 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:05.301 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:05.302 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:05.302 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:06.313 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:06.314 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:06.315 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:07.325 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:07.326 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:07.327 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:08.339 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:08.339 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:08.340 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:09.353 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:09.353 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:09.354 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:10.369 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:10.370 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:10.371 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:11.384 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:11.385 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:11.385 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:12.396 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:12.396 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:12.397 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:13.407 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:13.407 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:13.408 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:14.422 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:14.423 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:14.423 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:15.437 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:15.437 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:15.438 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:16.450 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:16.451 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:16.452 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:17.464 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:17.464 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:17.465 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:18.478 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:18.478 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:18.479 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:19.492 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:19.492 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:19.493 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:20.501 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:20.502 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:20.503 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:21.515 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:21.516 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:21.517 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:22.530 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:22.530 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:22.531 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:23.541 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:23.542 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:23.543 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:24.553 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:24.553 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:24.554 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:25.563 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:25.563 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:25.566 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:26.576 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:26.576 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:26.576 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:27.584 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:27.584 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:27.584 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:28.597 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:28.598 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:28.598 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:29.608 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:29.609 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:29.610 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:30.622 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:30.622 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:30.623 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:31.636 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:31.636 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:31.637 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:32.650 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:32.650 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:32.651 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:33.663 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:33.663 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:33.664 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:34.672 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:34.672 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:34.673 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:35.682 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:35.682 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:35.683 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:36.696 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:36.696 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:36.697 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:37.712 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:37.713 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:37.714 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:38.728 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:38.729 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:38.730 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:39.742 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:39.742 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:39.743 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:40.754 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:40.755 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:40.756 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:41.770 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:41.770 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:41.771 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:42.783 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:42.784 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:42.785 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:43.799 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:43.799 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:43.800 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:44.810 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:44.810 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:44.811 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:45.822 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:45.823 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:45.824 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:46.834 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:46.834 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:46.838 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:47.850 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:47.851 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:47.852 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:48.864 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:48.864 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:48.865 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:49.878 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:49.878 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:49.879 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:50.891 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:50.892 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:50.893 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:51.904 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:51.904 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:51.905 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:52.918 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:52.919 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:52.920 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:53.931 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:53.931 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:53.932 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:54.946 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:54.946 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:54.947 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:55.960 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:55.961 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:55.962 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:56.973 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:56.973 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:56.975 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:57.987 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:57.987 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:57.988 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:03:59.001 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:03:59.002 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:03:59.003 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:00.016 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:00.016 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:00.017 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:01.032 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:01.033 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:01.034 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:02.046 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:02.046 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:02.047 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:03.061 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:03.062 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:03.063 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:04.078 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:04.079 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:04.080 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:05.092 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:05.093 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:05.094 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:06.107 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:06.108 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:06.109 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:07.122 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:07.122 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:07.123 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:08.137 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:08.137 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:08.138 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:09.150 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:09.150 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:09.151 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:10.163 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:10.164 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:10.165 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:11.174 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:11.175 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:11.175 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:12.189 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:12.189 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:12.190 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:13.204 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:13.205 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:13.206 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:14.218 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:14.218 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:14.219 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:15.233 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:15.233 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:15.234 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:16.245 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:16.246 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:16.247 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:17.256 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:17.256 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:17.257 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:18.270 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:18.270 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:18.271 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:19.284 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:19.284 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:19.285 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:20.295 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:20.296 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:20.297 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:21.310 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:21.310 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:21.311 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:22.322 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:22.322 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:22.323 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:23.337 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:23.338 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:23.339 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:24.350 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:24.350 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:24.351 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:25.365 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:25.365 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:25.366 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:26.376 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:26.376 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:26.376 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:27.389 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:27.389 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:27.390 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:28.401 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:28.402 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:28.403 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:29.417 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:29.417 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:29.418 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:30.429 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:30.430 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:30.431 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:31.443 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:31.444 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:31.444 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:32.457 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:32.458 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:32.459 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:33.473 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:33.473 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:33.474 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:34.487 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:34.487 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:34.488 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:35.497 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:35.498 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:35.499 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:36.511 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:36.512 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:36.513 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:37.526 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:37.526 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:37.527 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:38.542 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:38.542 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:38.543 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:39.555 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:39.556 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:39.557 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:40.572 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:40.573 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:40.574 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:41.583 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:41.584 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:41.584 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:42.597 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:42.598 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:42.599 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:43.613 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:43.614 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:43.615 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:44.626 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:44.627 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:44.628 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:45.642 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:45.643 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:45.644 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:46.659 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:46.659 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:46.660 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:47.673 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:47.673 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:47.674 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:48.685 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:48.686 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:48.687 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:49.699 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:49.700 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:49.700 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:50.711 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:50.711 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:50.712 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:51.726 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:51.727 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:51.727 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:52.738 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:52.739 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:52.740 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:53.751 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:53.752 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:53.753 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:54.768 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:54.769 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:54.770 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:55.782 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:55.783 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:55.784 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:56.799 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:56.799 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:56.800 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:57.814 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:57.814 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:57.815 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:04:58.828 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:04:58.828 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:04:58.829 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:04:58.830 * Master replied to PING, replication can continue...
+72006:S 01 Nov 2019 22:04:58.830 * Partial resynchronization not possible (no cached master)
+72006:S 01 Nov 2019 22:04:58.833 * Full resync from master: 3115901434515159d57bf9fc4303ba00a147bd6f:0
+72006:S 01 Nov 2019 22:04:58.888 * MASTER <-> REPLICA sync: receiving 175 bytes from master
+72006:S 01 Nov 2019 22:04:58.889 * MASTER <-> REPLICA sync: Flushing old data
+72006:S 01 Nov 2019 22:04:58.889 * MASTER <-> REPLICA sync: Loading DB in memory
+72006:S 01 Nov 2019 22:04:58.889 * MASTER <-> REPLICA sync: Finished with success
+72006:S 01 Nov 2019 22:08:53.508 # Connection with master lost.
+72006:S 01 Nov 2019 22:08:53.508 * Caching the disconnected master state.
+72006:S 01 Nov 2019 22:08:53.977 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:08:53.978 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:08:53.978 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:08:54.990 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:08:54.990 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:08:54.991 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:08:56.001 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:08:56.002 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:08:56.003 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:08:57.014 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:08:57.015 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:08:57.015 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:08:58.026 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:08:58.027 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:08:58.028 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:08:59.039 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:08:59.040 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:08:59.041 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:09:00.055 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:09:00.055 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:09:00.056 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:09:01.068 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:09:01.069 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:09:01.070 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:09:02.083 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:09:02.084 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:09:02.085 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:09:03.094 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:09:03.094 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:09:03.095 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:09:04.109 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:09:04.109 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:09:04.110 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:09:05.123 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:09:05.123 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:09:05.124 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:09:06.132 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:09:06.133 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:09:06.133 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:09:07.147 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:09:07.148 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:09:07.149 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:09:08.162 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:09:08.162 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:09:08.163 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:09:09.176 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:09:09.177 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:09:09.178 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:09:10.193 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:09:10.193 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:09:10.194 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:09:11.204 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:09:11.205 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:09:11.206 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:09:12.220 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:09:12.220 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:09:12.221 # Error condition on socket for SYNC: Connection refused
+72006:S 01 Nov 2019 22:09:13.234 * Connecting to MASTER 127.0.0.1:6379
+72006:S 01 Nov 2019 22:09:13.234 * MASTER <-> REPLICA sync started
+72006:S 01 Nov 2019 22:09:13.235 * Non blocking connect for SYNC fired the event.
+72006:S 01 Nov 2019 22:09:13.236 * Master replied to PING, replication can continue...
+72006:S 01 Nov 2019 22:09:13.236 * Trying a partial resynchronization (request 3115901434515159d57bf9fc4303ba00a147bd6f:323).
+72006:S 01 Nov 2019 22:09:13.239 * Full resync from master: 5d7f2b1ef32bb9b01b16d7e6e60e9e26b2d28618:0
+72006:S 01 Nov 2019 22:09:13.239 * Discarding previously cached master state.
+72006:S 01 Nov 2019 22:09:13.307 * MASTER <-> REPLICA sync: receiving 159829 bytes from master
+72006:S 01 Nov 2019 22:09:13.309 * MASTER <-> REPLICA sync: Flushing old data
+72006:S 01 Nov 2019 22:09:13.309 * MASTER <-> REPLICA sync: Loading DB in memory
+72006:S 01 Nov 2019 22:09:13.313 * MASTER <-> REPLICA sync: Finished with success
+72006:S 01 Nov 2019 22:12:49.098 * 1 changes in 900 seconds. Saving...
+72006:S 01 Nov 2019 22:12:49.098 * Background saving started by pid 72524
+72524:C 01 Nov 2019 22:12:49.103 * DB saved on disk
+72006:S 01 Nov 2019 22:12:49.199 * Background saving terminated with success
+72006:S 01 Nov 2019 22:22:37.038 * Replica 127.0.0.1:6380 asks for synchronization
+72006:S 01 Nov 2019 22:22:37.039 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '66726978558cb48f253022c212968b9484f73c8e', my replication IDs are '5d7f2b1ef32bb9b01b16d7e6e60e9e26b2d28618' and '0000000000000000000000000000000000000000')
+72006:S 01 Nov 2019 22:22:37.039 * Starting BGSAVE for SYNC with target: disk
+72006:S 01 Nov 2019 22:22:37.040 * Background saving started by pid 72570
+72570:C 01 Nov 2019 22:22:37.046 * DB saved on disk
+72006:S 01 Nov 2019 22:22:37.137 * Background saving terminated with success
+72006:S 01 Nov 2019 22:22:37.138 * Synchronization with replica 127.0.0.1:6380 succeeded
+72006:S 01 Nov 2019 22:31:54.681 # User requested shutdown...
+72006:S 01 Nov 2019 22:31:54.681 * Saving the final RDB snapshot before exiting.
+72006:S 01 Nov 2019 22:31:54.687 * DB saved on disk
+72006:S 01 Nov 2019 22:31:54.687 * Removing the pid file.
+72006:S 01 Nov 2019 22:31:54.687 # Redis is now ready to exit, bye bye...
+72607:C 01 Nov 2019 22:33:34.333 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+72607:C 01 Nov 2019 22:33:34.333 # Redis version=5.0.6, bits=64, commit=00000000, modified=0, pid=72607, just started
+72607:C 01 Nov 2019 22:33:34.333 # Configuration loaded
+72608:M 01 Nov 2019 22:33:34.335 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6381
+ |    `-._   `._    /     _.-'    |     PID: 72608
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+72608:M 01 Nov 2019 22:33:34.336 # Server initialized
+72608:M 01 Nov 2019 22:33:34.340 * DB loaded from disk: 0.003 seconds
+72608:M 01 Nov 2019 22:33:34.340 * Ready to accept connections
+72608:M 01 Nov 2019 22:33:34.848 * Replica 127.0.0.1:6380 asks for synchronization
+72608:M 01 Nov 2019 22:33:34.848 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '5d7f2b1ef32bb9b01b16d7e6e60e9e26b2d28618', my replication IDs are '9a25f53a54a2ef7f14ed93041d5ed5f2b135efd2' and '0000000000000000000000000000000000000000')
+72608:M 01 Nov 2019 22:33:34.849 * Starting BGSAVE for SYNC with target: disk
+72608:M 01 Nov 2019 22:33:34.850 * Background saving started by pid 72617
+72617:C 01 Nov 2019 22:33:34.856 * DB saved on disk
+72608:M 01 Nov 2019 22:33:34.947 * Background saving terminated with success
+72608:M 01 Nov 2019 22:33:34.948 * Synchronization with replica 127.0.0.1:6380 succeeded
+72608:S 01 Nov 2019 22:34:50.130 # Connection with replica 127.0.0.1:6380 lost.
+72608:S 01 Nov 2019 22:34:50.130 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+72608:S 01 Nov 2019 22:34:50.131 * REPLICAOF 127.0.0.1:6379 enabled (user request from 'id=4 addr=127.0.0.1:62449 fd=8 name= age=67 idle=0 flags=N db=1 sub=0 psub=0 multi=-1 qbuf=42 qbuf-free=32726 obl=0 oll=0 omem=0 events=r cmd=slaveof')
+72608:S 01 Nov 2019 22:34:50.284 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:34:50.284 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:34:50.285 * Non blocking connect for SYNC fired the event.
+72608:S 01 Nov 2019 22:34:50.286 * Master replied to PING, replication can continue...
+72608:S 01 Nov 2019 22:34:50.286 * Trying a partial resynchronization (request 77904af071295e21032ba8f45e07c5d886ad5b9c:150).
+72608:S 01 Nov 2019 22:34:50.289 * Full resync from master: 5d7f2b1ef32bb9b01b16d7e6e60e9e26b2d28618:2027
+72608:S 01 Nov 2019 22:34:50.289 * Discarding previously cached master state.
+72608:S 01 Nov 2019 22:34:50.352 * MASTER <-> REPLICA sync: receiving 159877 bytes from master
+72608:S 01 Nov 2019 22:34:50.354 * MASTER <-> REPLICA sync: Flushing old data
+72608:S 01 Nov 2019 22:34:50.354 * MASTER <-> REPLICA sync: Loading DB in memory
+72608:S 01 Nov 2019 22:34:50.356 * MASTER <-> REPLICA sync: Finished with success
+72608:S 01 Nov 2019 22:34:50.793 * Replica 127.0.0.1:6380 asks for synchronization
+72608:S 01 Nov 2019 22:34:50.794 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '77904af071295e21032ba8f45e07c5d886ad5b9c', my replication IDs are '5d7f2b1ef32bb9b01b16d7e6e60e9e26b2d28618' and '0000000000000000000000000000000000000000')
+72608:S 01 Nov 2019 22:34:50.794 * Starting BGSAVE for SYNC with target: disk
+72608:S 01 Nov 2019 22:34:50.795 * Background saving started by pid 72621
+72621:C 01 Nov 2019 22:34:50.801 * DB saved on disk
+72608:S 01 Nov 2019 22:34:50.892 * Background saving terminated with success
+72608:S 01 Nov 2019 22:34:50.893 * Synchronization with replica 127.0.0.1:6380 succeeded
+72608:S 01 Nov 2019 22:41:06.554 # Connection with master lost.
+72608:S 01 Nov 2019 22:41:06.554 * Caching the disconnected master state.
+72608:S 01 Nov 2019 22:41:06.996 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:06.997 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:06.998 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:08.011 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:08.011 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:08.012 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:09.024 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:09.025 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:09.026 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:10.039 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:10.039 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:10.040 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:11.055 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:11.055 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:11.056 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:12.070 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:12.070 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:12.071 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:13.082 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:13.082 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:13.083 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:14.093 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:14.094 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:14.095 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:15.107 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:15.108 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:15.108 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:16.120 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:16.121 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:16.122 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:17.137 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:17.137 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:17.138 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:18.153 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:18.154 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:18.155 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:19.164 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:19.164 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:19.165 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:20.174 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:20.174 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:20.175 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:21.187 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:21.188 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:21.189 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:22.196 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:22.197 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:22.197 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:23.205 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:23.205 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:23.205 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:24.217 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:24.218 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:24.219 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:25.230 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:25.231 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:25.232 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:26.245 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:26.245 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:26.246 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:27.257 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:27.258 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:27.259 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:28.271 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:28.272 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:28.273 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:29.286 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:29.287 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:29.288 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:30.301 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:30.302 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:30.303 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:31.319 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:31.319 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:31.320 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:32.334 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:32.334 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:32.335 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:33.349 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:33.350 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:33.350 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:34.363 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:34.364 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:34.365 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:35.380 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:35.381 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:35.382 # Error condition on socket for SYNC: Connection refused
+72608:S 01 Nov 2019 22:41:36.396 * Connecting to MASTER 127.0.0.1:6379
+72608:S 01 Nov 2019 22:41:36.397 * MASTER <-> REPLICA sync started
+72608:S 01 Nov 2019 22:41:36.398 # Error condition on socket for SYNC: Connection refused
+72608:M 01 Nov 2019 22:41:36.770 # Setting secondary replication ID to 5d7f2b1ef32bb9b01b16d7e6e60e9e26b2d28618, valid up to offset: 13580. New replication ID is ebf0c61c1b1ee5940f0ae19b7fd2b666b58e98ec
+72608:M 01 Nov 2019 22:41:36.770 * Discarding previously cached master state.
+72608:M 01 Nov 2019 22:41:36.771 # Connection with replica 127.0.0.1:6380 lost.
+72608:M 01 Nov 2019 22:41:36.772 * MASTER MODE enabled (user request from 'id=8 addr=127.0.0.1:62742 fd=10 name=sentinel-bbe1e3ad-cmd age=196 idle=0 flags=x db=0 sub=0 psub=0 multi=3 qbuf=140 qbuf-free=32628 obl=36 oll=0 omem=0 events=r cmd=exec')
+72608:M 01 Nov 2019 22:41:36.774 # CONFIG REWRITE executed with success.
+72608:M 01 Nov 2019 22:41:36.879 * Replica 127.0.0.1:6380 asks for synchronization
+72608:M 01 Nov 2019 22:41:36.879 * Partial resynchronization request from 127.0.0.1:6380 accepted. Sending 0 bytes of backlog starting from offset 13580.
+72608:M 01 Nov 2019 22:45:08.716 * Replica 127.0.0.1:6379 asks for synchronization
+72608:M 01 Nov 2019 22:45:08.716 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for 'd5f7fbefe22a5b26b9034b791bd0dbb3c37b5b65', my replication IDs are 'ebf0c61c1b1ee5940f0ae19b7fd2b666b58e98ec' and '5d7f2b1ef32bb9b01b16d7e6e60e9e26b2d28618')
+72608:M 01 Nov 2019 22:45:08.717 * Starting BGSAVE for SYNC with target: disk
+72608:M 01 Nov 2019 22:45:08.718 * Background saving started by pid 72788
+72788:C 01 Nov 2019 22:45:08.723 * DB saved on disk
+72608:M 01 Nov 2019 22:45:08.769 * Background saving terminated with success
+72608:M 01 Nov 2019 22:45:08.769 * Synchronization with replica 127.0.0.1:6379 succeeded
+72608:M 01 Nov 2019 22:54:28.619 # User requested shutdown...
+72608:M 01 Nov 2019 22:54:28.619 * Saving the final RDB snapshot before exiting.
+72608:M 01 Nov 2019 22:54:28.627 * DB saved on disk
+72608:M 01 Nov 2019 22:54:28.628 * Removing the pid file.
+72608:M 01 Nov 2019 22:54:28.628 # Redis is now ready to exit, bye bye...
+72900:C 01 Nov 2019 23:29:31.739 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+72900:C 01 Nov 2019 23:29:31.739 # Redis version=5.0.6, bits=64, commit=00000000, modified=0, pid=72900, just started
+72900:C 01 Nov 2019 23:29:31.740 # Configuration loaded
+72901:M 01 Nov 2019 23:29:31.742 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6381
+ |    `-._   `._    /     _.-'    |     PID: 72901
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+72901:M 01 Nov 2019 23:29:31.744 # Server initialized
+72901:M 01 Nov 2019 23:29:31.748 * DB loaded from disk: 0.004 seconds
+72901:M 01 Nov 2019 23:29:31.749 * Ready to accept connections
+72901:S 01 Nov 2019 23:29:42.689 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+72901:S 01 Nov 2019 23:29:42.689 * REPLICAOF 127.0.0.1:6379 enabled (user request from 'id=3 addr=127.0.0.1:54245 fd=7 name=sentinel-bbe1e3ad-cmd age=10 idle=0 flags=x db=0 sub=0 psub=0 multi=3 qbuf=148 qbuf-free=32620 obl=36 oll=0 omem=0 events=r cmd=exec')
+72901:S 01 Nov 2019 23:29:42.692 # CONFIG REWRITE executed with success.
+72901:S 01 Nov 2019 23:29:42.868 * Connecting to MASTER 127.0.0.1:6379
+72901:S 01 Nov 2019 23:29:42.869 * MASTER <-> REPLICA sync started
+72901:S 01 Nov 2019 23:29:42.870 * Non blocking connect for SYNC fired the event.
+72901:S 01 Nov 2019 23:29:42.874 * Master replied to PING, replication can continue...
+72901:S 01 Nov 2019 23:29:42.878 * Trying a partial resynchronization (request ddf3ce268e9aa522f12222ccec067944c4566482:1).
+72901:S 01 Nov 2019 23:29:42.881 * Full resync from master: 1e105c970ee8167788065f0717ddaa072ee3984e:202937
+72901:S 01 Nov 2019 23:29:42.881 * Discarding previously cached master state.
+72901:S 01 Nov 2019 23:29:42.967 * MASTER <-> REPLICA sync: receiving 159892 bytes from master
+72901:S 01 Nov 2019 23:29:42.969 * MASTER <-> REPLICA sync: Flushing old data
+72901:S 01 Nov 2019 23:29:42.970 * MASTER <-> REPLICA sync: Loading DB in memory
+72901:S 01 Nov 2019 23:29:42.973 * MASTER <-> REPLICA sync: Finished with success
+72901:S 02 Nov 2019 01:31:31.004 # MASTER timeout: no data nor PING received...
+72901:S 02 Nov 2019 01:31:32.086 # Connection with master lost.
+72901:S 02 Nov 2019 01:31:32.086 * Caching the disconnected master state.
+72901:S 02 Nov 2019 01:31:32.087 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 01:31:32.088 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 01:31:32.089 * Non blocking connect for SYNC fired the event.
+72901:S 02 Nov 2019 01:31:32.089 * Master replied to PING, replication can continue...
+72901:S 02 Nov 2019 01:31:32.090 * Trying a partial resynchronization (request 1e105c970ee8167788065f0717ddaa072ee3984e:210810).
+72901:S 02 Nov 2019 01:31:32.091 * Successful partial resynchronization with master.
+72901:S 02 Nov 2019 01:31:32.092 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+72901:S 02 Nov 2019 02:51:42.991 # Connection with master lost.
+72901:S 02 Nov 2019 02:51:42.991 * Caching the disconnected master state.
+72901:S 02 Nov 2019 02:51:43.019 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 02:51:43.021 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 02:51:43.021 * Non blocking connect for SYNC fired the event.
+72901:S 02 Nov 2019 02:51:43.021 * Master replied to PING, replication can continue...
+72901:S 02 Nov 2019 02:51:43.022 * Trying a partial resynchronization (request 1e105c970ee8167788065f0717ddaa072ee3984e:211769).
+72901:S 02 Nov 2019 02:51:43.022 * Successful partial resynchronization with master.
+72901:S 02 Nov 2019 02:51:43.022 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+72901:S 02 Nov 2019 04:39:46.683 # Connection with master lost.
+72901:S 02 Nov 2019 04:39:46.684 * Caching the disconnected master state.
+72901:S 02 Nov 2019 04:39:46.771 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 04:39:46.772 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 04:39:46.772 * Non blocking connect for SYNC fired the event.
+72901:S 02 Nov 2019 04:39:46.773 * Master replied to PING, replication can continue...
+72901:S 02 Nov 2019 04:39:46.774 * Trying a partial resynchronization (request 1e105c970ee8167788065f0717ddaa072ee3984e:212593).
+72901:S 02 Nov 2019 04:39:46.776 * Successful partial resynchronization with master.
+72901:S 02 Nov 2019 04:39:46.777 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+72901:S 02 Nov 2019 06:27:50.602 # Connection with master lost.
+72901:S 02 Nov 2019 06:27:50.602 * Caching the disconnected master state.
+72901:S 02 Nov 2019 06:27:50.700 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 06:27:50.704 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 06:27:50.704 * Non blocking connect for SYNC fired the event.
+72901:S 02 Nov 2019 06:27:50.704 * Master replied to PING, replication can continue...
+72901:S 02 Nov 2019 06:27:50.705 * Trying a partial resynchronization (request 1e105c970ee8167788065f0717ddaa072ee3984e:213417).
+72901:S 02 Nov 2019 06:27:50.705 * Successful partial resynchronization with master.
+72901:S 02 Nov 2019 06:27:50.706 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+72901:S 02 Nov 2019 08:15:53.708 # Connection with master lost.
+72901:S 02 Nov 2019 08:15:53.708 * Caching the disconnected master state.
+72901:S 02 Nov 2019 08:15:53.808 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 08:15:53.808 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 08:15:53.808 * Non blocking connect for SYNC fired the event.
+72901:S 02 Nov 2019 08:15:53.809 * Master replied to PING, replication can continue...
+72901:S 02 Nov 2019 08:15:53.809 * Trying a partial resynchronization (request 1e105c970ee8167788065f0717ddaa072ee3984e:214255).
+72901:S 02 Nov 2019 08:15:53.810 * Successful partial resynchronization with master.
+72901:S 02 Nov 2019 08:15:53.810 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+72901:S 02 Nov 2019 08:30:02.899 # Connection with master lost.
+72901:S 02 Nov 2019 08:30:02.900 * Caching the disconnected master state.
+72901:S 02 Nov 2019 08:30:02.998 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 08:30:02.999 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 08:30:02.999 * Non blocking connect for SYNC fired the event.
+72901:S 02 Nov 2019 08:30:03.000 * Master replied to PING, replication can continue...
+72901:S 02 Nov 2019 08:30:03.000 * Trying a partial resynchronization (request 1e105c970ee8167788065f0717ddaa072ee3984e:215079).
+72901:S 02 Nov 2019 08:30:03.002 * Successful partial resynchronization with master.
+72901:S 02 Nov 2019 08:30:03.002 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+72901:S 02 Nov 2019 10:05:20.001 # MASTER timeout: no data nor PING received...
+72901:S 02 Nov 2019 10:05:21.085 # Connection with master lost.
+72901:S 02 Nov 2019 10:05:21.086 * Caching the disconnected master state.
+72901:S 02 Nov 2019 10:05:21.088 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 10:05:21.091 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 10:05:21.095 * Non blocking connect for SYNC fired the event.
+72901:S 02 Nov 2019 10:05:21.097 * Master replied to PING, replication can continue...
+72901:S 02 Nov 2019 10:05:21.103 * Trying a partial resynchronization (request 1e105c970ee8167788065f0717ddaa072ee3984e:215768).
+72901:S 02 Nov 2019 10:05:21.105 * Successful partial resynchronization with master.
+72901:S 02 Nov 2019 10:05:21.106 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+72901:S 02 Nov 2019 10:38:14.133 # Connection with master lost.
+72901:S 02 Nov 2019 10:38:14.134 * Caching the disconnected master state.
+72901:S 02 Nov 2019 10:38:14.627 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 10:38:14.628 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 10:38:14.628 * Non blocking connect for SYNC fired the event.
+72901:S 02 Nov 2019 10:38:14.628 * Master replied to PING, replication can continue...
+72901:S 02 Nov 2019 10:38:14.629 * Trying a partial resynchronization (request 1e105c970ee8167788065f0717ddaa072ee3984e:216727).
+72901:S 02 Nov 2019 10:38:14.629 * Successful partial resynchronization with master.
+72901:S 02 Nov 2019 10:38:14.630 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+72901:S 02 Nov 2019 10:53:30.104 # Connection with master lost.
+72901:S 02 Nov 2019 10:53:30.105 * Caching the disconnected master state.
+72901:S 02 Nov 2019 10:53:30.618 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 10:53:30.619 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 10:53:30.620 * Non blocking connect for SYNC fired the event.
+72901:S 02 Nov 2019 10:53:30.620 * Master replied to PING, replication can continue...
+72901:S 02 Nov 2019 10:53:30.621 * Trying a partial resynchronization (request 1e105c970ee8167788065f0717ddaa072ee3984e:252690).
+72901:S 02 Nov 2019 10:53:30.621 * Successful partial resynchronization with master.
+72901:S 02 Nov 2019 10:53:30.621 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+72901:S 02 Nov 2019 11:13:32.095 # Connection with master lost.
+72901:S 02 Nov 2019 11:13:32.096 * Caching the disconnected master state.
+72901:S 02 Nov 2019 11:13:32.729 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:13:32.729 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:13:32.733 * Non blocking connect for SYNC fired the event.
+72901:S 02 Nov 2019 11:13:32.734 * Master replied to PING, replication can continue...
+72901:S 02 Nov 2019 11:13:32.734 * Trying a partial resynchronization (request 1e105c970ee8167788065f0717ddaa072ee3984e:279156).
+72901:S 02 Nov 2019 11:13:32.738 * Successful partial resynchronization with master.
+72901:S 02 Nov 2019 11:13:32.742 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+72901:S 02 Nov 2019 11:35:28.521 * 1 changes in 900 seconds. Saving...
+72901:S 02 Nov 2019 11:35:28.523 * Background saving started by pid 73601
+73601:C 02 Nov 2019 11:35:28.531 * DB saved on disk
+72901:S 02 Nov 2019 11:35:28.624 * Background saving terminated with success
+72901:S 02 Nov 2019 11:35:45.941 # Connection with master lost.
+72901:S 02 Nov 2019 11:35:45.941 * Caching the disconnected master state.
+72901:S 02 Nov 2019 11:35:46.443 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:35:46.443 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:35:46.444 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:35:47.456 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:35:47.456 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:35:47.457 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:35:48.466 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:35:48.467 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:35:48.467 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:35:49.475 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:35:49.476 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:35:49.477 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:35:50.490 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:35:50.491 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:35:50.492 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:35:51.505 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:35:51.506 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:35:51.507 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:35:52.519 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:35:52.520 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:35:52.521 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:35:53.535 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:35:53.536 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:35:53.537 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:35:54.548 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:35:54.548 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:35:54.549 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:35:55.561 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:35:55.562 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:35:55.563 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:35:56.574 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:35:56.575 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:35:56.576 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:35:57.587 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:35:57.587 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:35:57.588 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:35:58.597 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:35:58.598 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:35:58.599 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:35:59.614 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:35:59.615 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:35:59.616 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:36:00.627 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:36:00.628 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:36:00.628 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:36:01.641 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:36:01.642 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:36:01.643 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:36:02.656 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:36:02.657 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:36:02.658 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:36:03.669 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:36:03.670 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:36:03.670 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:36:04.683 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:36:04.684 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:36:04.685 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:36:05.698 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:36:05.698 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:36:05.699 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:36:06.710 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:36:06.711 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:36:06.712 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:36:07.723 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:36:07.724 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:36:07.725 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:36:08.735 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:36:08.736 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:36:08.736 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:36:09.750 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:36:09.751 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:36:09.752 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:36:10.764 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:36:10.765 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:36:10.766 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:36:11.779 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:36:11.780 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:36:11.780 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:36:12.793 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:36:12.794 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:36:12.795 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:36:13.808 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:36:13.808 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:36:13.809 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:36:14.821 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:36:14.822 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:36:14.823 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:36:15.835 * Connecting to MASTER 127.0.0.1:6379
+72901:S 02 Nov 2019 11:36:15.836 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:36:15.837 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:36:16.567 * REPLICAOF 127.0.0.1:6380 enabled (user request from 'id=3 addr=127.0.0.1:54245 fd=7 name=sentinel-bbe1e3ad-cmd age=43604 idle=0 flags=x db=0 sub=0 psub=0 multi=3 qbuf=283 qbuf-free=32485 obl=36 oll=0 omem=0 events=r cmd=exec')
+72901:S 02 Nov 2019 11:36:16.571 # CONFIG REWRITE executed with success.
+72901:S 02 Nov 2019 11:36:16.849 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:36:16.849 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:36:16.850 * Non blocking connect for SYNC fired the event.
+72901:S 02 Nov 2019 11:36:16.851 * Master replied to PING, replication can continue...
+72901:S 02 Nov 2019 11:36:16.852 * Trying a partial resynchronization (request 1e105c970ee8167788065f0717ddaa072ee3984e:369220).
+72901:S 02 Nov 2019 11:36:16.853 * Successful partial resynchronization with master.
+72901:S 02 Nov 2019 11:36:16.853 # Master replication ID changed to 66bda17ab105d21f6df0947ed469b4e91ce1e658
+72901:S 02 Nov 2019 11:36:16.853 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+72901:S 02 Nov 2019 11:50:29.061 * 1 changes in 900 seconds. Saving...
+72901:S 02 Nov 2019 11:50:29.061 * Background saving started by pid 73660
+73660:C 02 Nov 2019 11:50:29.066 * DB saved on disk
+72901:S 02 Nov 2019 11:50:29.164 * Background saving terminated with success
+72901:S 02 Nov 2019 11:57:14.233 # Connection with master lost.
+72901:S 02 Nov 2019 11:57:14.233 * Caching the disconnected master state.
+72901:S 02 Nov 2019 11:57:14.690 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:14.690 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:14.691 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:15.700 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:15.700 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:15.701 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:16.709 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:16.709 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:16.710 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:17.719 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:17.719 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:17.720 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:18.730 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:18.730 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:18.731 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:19.741 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:19.741 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:19.742 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:20.750 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:20.750 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:20.751 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:21.761 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:21.762 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:21.762 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:22.770 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:22.770 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:22.771 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:23.780 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:23.780 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:23.781 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:24.793 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:24.793 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:24.794 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:25.802 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:25.803 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:25.804 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:26.811 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:26.812 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:26.812 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:27.821 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:27.821 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:27.822 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:28.829 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:28.829 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:28.830 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:29.838 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:29.839 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:29.840 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:30.850 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:30.850 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:30.851 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:31.861 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:31.861 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:31.862 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:32.870 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:32.871 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:32.871 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:33.878 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:33.879 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:33.880 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:34.888 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:34.889 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:34.890 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:35.899 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:35.899 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:35.900 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:36.909 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:36.909 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:36.910 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:37.918 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:37.918 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:37.919 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:38.927 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:38.928 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:38.929 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:39.936 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:39.936 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:39.937 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:40.947 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:40.947 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:40.948 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:41.957 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:41.958 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:41.958 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:42.967 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:42.968 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:42.969 # Error condition on socket for SYNC: Connection refused
+72901:S 02 Nov 2019 11:57:43.978 * Connecting to MASTER 127.0.0.1:6380
+72901:S 02 Nov 2019 11:57:43.979 * MASTER <-> REPLICA sync started
+72901:S 02 Nov 2019 11:57:43.979 # Error condition on socket for SYNC: Connection refused
+72901:M 02 Nov 2019 11:57:44.445 # Setting secondary replication ID to 66bda17ab105d21f6df0947ed469b4e91ce1e658, valid up to offset: 454426. New replication ID is 4155fa249b03f364cdfa59b42cbcd7693d1a0bd8
+72901:M 02 Nov 2019 11:57:44.446 * Discarding previously cached master state.
+72901:M 02 Nov 2019 11:57:44.446 * MASTER MODE enabled (user request from 'id=9 addr=127.0.0.1:58645 fd=7 name=sentinel-bbe1e3ad-cmd age=1287 idle=0 flags=x db=0 sub=0 psub=0 multi=3 qbuf=154 qbuf-free=32614 obl=36 oll=0 omem=0 events=r cmd=exec')
+72901:M 02 Nov 2019 11:57:44.448 # CONFIG REWRITE executed with success.
+72901:M 02 Nov 2019 12:05:30.011 * 1 changes in 900 seconds. Saving...
+72901:M 02 Nov 2019 12:05:30.011 * Background saving started by pid 73688
+73688:C 02 Nov 2019 12:05:30.017 * DB saved on disk
+72901:M 02 Nov 2019 12:05:30.113 * Background saving terminated with success
+72901:M 02 Nov 2019 12:11:32.241 * Replica 127.0.0.1:6380 asks for synchronization
+72901:M 02 Nov 2019 12:11:32.242 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for 'ed2a29351a248ba9527022200374a37d04fc8333', my replication IDs are '4155fa249b03f364cdfa59b42cbcd7693d1a0bd8' and '66bda17ab105d21f6df0947ed469b4e91ce1e658')
+72901:M 02 Nov 2019 12:11:32.242 * Starting BGSAVE for SYNC with target: disk
+72901:M 02 Nov 2019 12:11:32.243 * Background saving started by pid 73715
+73715:C 02 Nov 2019 12:11:32.248 * DB saved on disk
+72901:M 02 Nov 2019 12:11:32.340 * Background saving terminated with success
+72901:M 02 Nov 2019 12:11:32.340 * Synchronization with replica 127.0.0.1:6380 succeeded
+72901:M 02 Nov 2019 12:25:54.595 # User requested shutdown...
+72901:M 02 Nov 2019 12:25:54.596 * Saving the final RDB snapshot before exiting.
+72901:M 02 Nov 2019 12:25:54.606 * DB saved on disk
+72901:M 02 Nov 2019 12:25:54.607 * Removing the pid file.
+72901:M 02 Nov 2019 12:25:54.607 # Redis is now ready to exit, bye bye...
+73790:C 02 Nov 2019 12:40:21.614 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+73790:C 02 Nov 2019 12:40:21.614 # Redis version=5.0.6, bits=64, commit=00000000, modified=0, pid=73790, just started
+73790:C 02 Nov 2019 12:40:21.614 # Configuration loaded
+73791:M 02 Nov 2019 12:40:21.617 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6381
+ |    `-._   `._    /     _.-'    |     PID: 73791
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+73791:M 02 Nov 2019 12:40:21.619 # Server initialized
+73791:M 02 Nov 2019 12:40:21.623 * DB loaded from disk: 0.003 seconds
+73791:M 02 Nov 2019 12:40:21.623 * Ready to accept connections
+73791:S 02 Nov 2019 12:40:32.353 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+73791:S 02 Nov 2019 12:40:32.353 * REPLICAOF 127.0.0.1:6380 enabled (user request from 'id=3 addr=127.0.0.1:56693 fd=7 name=sentinel-bbe1e3ad-cmd age=10 idle=0 flags=x db=0 sub=0 psub=0 multi=3 qbuf=148 qbuf-free=32620 obl=36 oll=0 omem=0 events=r cmd=exec')
+73791:S 02 Nov 2019 12:40:32.357 # CONFIG REWRITE executed with success.
+73791:S 02 Nov 2019 12:40:32.725 * Connecting to MASTER 127.0.0.1:6380
+73791:S 02 Nov 2019 12:40:32.726 * MASTER <-> REPLICA sync started
+73791:S 02 Nov 2019 12:40:32.727 * Non blocking connect for SYNC fired the event.
+73791:S 02 Nov 2019 12:40:32.727 * Master replied to PING, replication can continue...
+73791:S 02 Nov 2019 12:40:32.728 * Trying a partial resynchronization (request 4c1a0dd283a129229b6c16ca727430d6e4c3a1dd:1).
+73791:S 02 Nov 2019 12:40:32.730 * Full resync from master: 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:624822
+73791:S 02 Nov 2019 12:40:32.730 * Discarding previously cached master state.
+73791:S 02 Nov 2019 12:40:32.738 * MASTER <-> REPLICA sync: receiving 159934 bytes from master
+73791:S 02 Nov 2019 12:40:32.739 * MASTER <-> REPLICA sync: Flushing old data
+73791:S 02 Nov 2019 12:40:32.740 * MASTER <-> REPLICA sync: Loading DB in memory
+73791:S 02 Nov 2019 12:40:32.742 * MASTER <-> REPLICA sync: Finished with success
+73791:S 02 Nov 2019 12:55:22.045 * 1 changes in 900 seconds. Saving...
+73791:S 02 Nov 2019 12:55:22.046 * Background saving started by pid 73837
+73837:C 02 Nov 2019 12:55:22.053 * DB saved on disk
+73791:S 02 Nov 2019 12:55:22.148 * Background saving terminated with success
+73791:S 02 Nov 2019 13:34:14.509 # MASTER timeout: no data nor PING received...
+73791:S 02 Nov 2019 13:34:15.101 # Connection with master lost.
+73791:S 02 Nov 2019 13:34:15.102 * Caching the disconnected master state.
+73791:S 02 Nov 2019 13:34:15.102 * Connecting to MASTER 127.0.0.1:6380
+73791:S 02 Nov 2019 13:34:15.104 * MASTER <-> REPLICA sync started
+73791:S 02 Nov 2019 13:34:15.107 * Non blocking connect for SYNC fired the event.
+73791:S 02 Nov 2019 13:34:15.108 * Master replied to PING, replication can continue...
+73791:S 02 Nov 2019 13:34:15.109 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:698310).
+73791:S 02 Nov 2019 13:34:15.110 * Successful partial resynchronization with master.
+73791:S 02 Nov 2019 13:34:15.110 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 02 Nov 2019 20:04:39.610 # MASTER timeout: no data nor PING received...
+73791:S 02 Nov 2019 20:04:40.089 # Connection with master lost.
+73791:S 02 Nov 2019 20:04:40.089 * Caching the disconnected master state.
+73791:S 02 Nov 2019 20:04:40.091 * Connecting to MASTER 127.0.0.1:6380
+73791:S 02 Nov 2019 20:04:40.091 * MASTER <-> REPLICA sync started
+73791:S 02 Nov 2019 20:04:40.092 * Non blocking connect for SYNC fired the event.
+73791:S 02 Nov 2019 20:04:40.092 * Master replied to PING, replication can continue...
+73791:S 02 Nov 2019 20:04:40.093 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:724056).
+73791:S 02 Nov 2019 20:04:40.093 * Successful partial resynchronization with master.
+73791:S 02 Nov 2019 20:04:40.094 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 02 Nov 2019 21:27:02.510 # MASTER timeout: no data nor PING received...
+73791:S 02 Nov 2019 21:27:03.101 # Connection with master lost.
+73791:S 02 Nov 2019 21:27:03.105 * Caching the disconnected master state.
+73791:S 02 Nov 2019 21:27:03.110 * Connecting to MASTER 127.0.0.1:6380
+73791:S 02 Nov 2019 21:27:03.110 * MASTER <-> REPLICA sync started
+73791:S 02 Nov 2019 21:27:03.123 * Non blocking connect for SYNC fired the event.
+73791:S 02 Nov 2019 21:27:03.131 * Master replied to PING, replication can continue...
+73791:S 02 Nov 2019 21:27:03.166 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:724070).
+73791:S 02 Nov 2019 21:27:03.172 * Successful partial resynchronization with master.
+73791:S 02 Nov 2019 21:27:03.172 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 03 Nov 2019 00:18:26.709 # MASTER timeout: no data nor PING received...
+73791:S 03 Nov 2019 00:18:27.090 # Connection with master lost.
+73791:S 03 Nov 2019 00:18:27.091 * Caching the disconnected master state.
+73791:S 03 Nov 2019 00:18:27.091 * Connecting to MASTER 127.0.0.1:6380
+73791:S 03 Nov 2019 00:18:27.092 * MASTER <-> REPLICA sync started
+73791:S 03 Nov 2019 00:18:27.092 * Non blocking connect for SYNC fired the event.
+73791:S 03 Nov 2019 00:18:27.093 * Master replied to PING, replication can continue...
+73791:S 03 Nov 2019 00:18:27.093 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:731854).
+73791:S 03 Nov 2019 00:18:27.094 * Successful partial resynchronization with master.
+73791:S 03 Nov 2019 00:18:27.094 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 03 Nov 2019 01:00:43.614 # MASTER timeout: no data nor PING received...
+73791:S 03 Nov 2019 01:00:44.088 # Connection with master lost.
+73791:S 03 Nov 2019 01:00:44.089 * Caching the disconnected master state.
+73791:S 03 Nov 2019 01:00:44.089 * Connecting to MASTER 127.0.0.1:6380
+73791:S 03 Nov 2019 01:00:44.090 * MASTER <-> REPLICA sync started
+73791:S 03 Nov 2019 01:00:44.090 * Non blocking connect for SYNC fired the event.
+73791:S 03 Nov 2019 01:00:44.091 * Master replied to PING, replication can continue...
+73791:S 03 Nov 2019 01:00:44.092 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:731868).
+73791:S 03 Nov 2019 01:00:44.093 * Successful partial resynchronization with master.
+73791:S 03 Nov 2019 01:00:44.093 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 03 Nov 2019 02:06:51.024 # MASTER timeout: no data nor PING received...
+73791:S 03 Nov 2019 02:06:52.774 # Connection with master lost.
+73791:S 03 Nov 2019 02:06:52.787 * Caching the disconnected master state.
+73791:S 03 Nov 2019 02:06:52.788 * Connecting to MASTER 127.0.0.1:6380
+73791:S 03 Nov 2019 02:06:52.788 * MASTER <-> REPLICA sync started
+73791:S 03 Nov 2019 02:06:52.789 * Non blocking connect for SYNC fired the event.
+73791:S 03 Nov 2019 02:06:52.790 * Master replied to PING, replication can continue...
+73791:S 03 Nov 2019 02:06:52.791 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:731882).
+73791:S 03 Nov 2019 02:06:52.792 * Successful partial resynchronization with master.
+73791:S 03 Nov 2019 02:06:52.793 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 03 Nov 2019 03:41:09.982 # MASTER timeout: no data nor PING received...
+73791:S 03 Nov 2019 03:41:09.984 # Connection with master lost.
+73791:S 03 Nov 2019 03:41:09.984 * Caching the disconnected master state.
+73791:S 03 Nov 2019 03:41:09.985 * Connecting to MASTER 127.0.0.1:6380
+73791:S 03 Nov 2019 03:41:09.985 * MASTER <-> REPLICA sync started
+73791:S 03 Nov 2019 03:41:09.986 * Non blocking connect for SYNC fired the event.
+73791:S 03 Nov 2019 03:41:09.987 * Master replied to PING, replication can continue...
+73791:S 03 Nov 2019 03:41:09.988 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:731938).
+73791:S 03 Nov 2019 03:41:09.989 * Successful partial resynchronization with master.
+73791:S 03 Nov 2019 03:41:09.989 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 03 Nov 2019 05:29:13.611 # MASTER timeout: no data nor PING received...
+73791:S 03 Nov 2019 05:29:14.087 # Connection with master lost.
+73791:S 03 Nov 2019 05:29:14.090 * Caching the disconnected master state.
+73791:S 03 Nov 2019 05:29:14.093 * Connecting to MASTER 127.0.0.1:6380
+73791:S 03 Nov 2019 05:29:14.093 * MASTER <-> REPLICA sync started
+73791:S 03 Nov 2019 05:29:14.094 * Non blocking connect for SYNC fired the event.
+73791:S 03 Nov 2019 05:29:14.096 * Master replied to PING, replication can continue...
+73791:S 03 Nov 2019 05:29:14.099 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:731980).
+73791:S 03 Nov 2019 05:29:14.101 * Successful partial resynchronization with master.
+73791:S 03 Nov 2019 05:29:14.101 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 03 Nov 2019 07:17:16.511 # MASTER timeout: no data nor PING received...
+73791:S 03 Nov 2019 07:17:17.095 # Connection with master lost.
+73791:S 03 Nov 2019 07:17:17.101 * Caching the disconnected master state.
+73791:S 03 Nov 2019 07:17:17.102 * Connecting to MASTER 127.0.0.1:6380
+73791:S 03 Nov 2019 07:17:17.103 * MASTER <-> REPLICA sync started
+73791:S 03 Nov 2019 07:17:17.105 * Non blocking connect for SYNC fired the event.
+73791:S 03 Nov 2019 07:17:17.110 * Master replied to PING, replication can continue...
+73791:S 03 Nov 2019 07:17:17.111 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:731994).
+73791:S 03 Nov 2019 07:17:17.167 * Successful partial resynchronization with master.
+73791:S 03 Nov 2019 07:17:17.175 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 03 Nov 2019 09:05:19.411 # MASTER timeout: no data nor PING received...
+73791:S 03 Nov 2019 09:05:20.084 # Connection with master lost.
+73791:S 03 Nov 2019 09:05:20.117 * Caching the disconnected master state.
+73791:S 03 Nov 2019 09:05:20.119 * Connecting to MASTER 127.0.0.1:6380
+73791:S 03 Nov 2019 09:05:20.119 * MASTER <-> REPLICA sync started
+73791:S 03 Nov 2019 09:05:20.119 * Non blocking connect for SYNC fired the event.
+73791:S 03 Nov 2019 09:05:20.120 * Master replied to PING, replication can continue...
+73791:S 03 Nov 2019 09:05:20.121 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:732008).
+73791:S 03 Nov 2019 09:05:20.121 * Successful partial resynchronization with master.
+73791:S 03 Nov 2019 09:05:20.122 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 03 Nov 2019 10:53:22.511 # MASTER timeout: no data nor PING received...
+73791:S 03 Nov 2019 10:53:23.094 # Connection with master lost.
+73791:S 03 Nov 2019 10:53:23.094 * Caching the disconnected master state.
+73791:S 03 Nov 2019 10:53:23.094 * Connecting to MASTER 127.0.0.1:6380
+73791:S 03 Nov 2019 10:53:23.095 * MASTER <-> REPLICA sync started
+73791:S 03 Nov 2019 10:53:23.095 * Non blocking connect for SYNC fired the event.
+73791:S 03 Nov 2019 10:53:23.097 * Master replied to PING, replication can continue...
+73791:S 03 Nov 2019 10:53:23.097 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:732022).
+73791:S 03 Nov 2019 10:53:23.098 * Successful partial resynchronization with master.
+73791:S 03 Nov 2019 10:53:23.099 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 03 Nov 2019 12:15:10.412 # MASTER timeout: no data nor PING received...
+73791:S 03 Nov 2019 12:15:11.097 # Connection with master lost.
+73791:S 03 Nov 2019 12:15:11.100 * Caching the disconnected master state.
+73791:S 03 Nov 2019 12:15:11.107 * Connecting to MASTER 127.0.0.1:6380
+73791:S 03 Nov 2019 12:15:11.145 * MASTER <-> REPLICA sync started
+73791:S 03 Nov 2019 12:15:11.145 * Non blocking connect for SYNC fired the event.
+73791:S 03 Nov 2019 12:15:11.146 * Master replied to PING, replication can continue...
+73791:S 03 Nov 2019 12:15:11.147 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:732036).
+73791:S 03 Nov 2019 12:15:11.148 * Successful partial resynchronization with master.
+73791:S 03 Nov 2019 12:15:11.148 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 03 Nov 2019 14:03:15.715 # MASTER timeout: no data nor PING received...
+73791:S 03 Nov 2019 14:03:15.723 # Connection with master lost.
+73791:S 03 Nov 2019 14:03:15.723 * Caching the disconnected master state.
+73791:S 03 Nov 2019 14:03:15.723 * Connecting to MASTER 127.0.0.1:6380
+73791:S 03 Nov 2019 14:03:15.724 * MASTER <-> REPLICA sync started
+73791:S 03 Nov 2019 14:03:15.724 * Non blocking connect for SYNC fired the event.
+73791:S 03 Nov 2019 14:03:15.725 * Master replied to PING, replication can continue...
+73791:S 03 Nov 2019 14:03:15.725 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:732050).
+73791:S 03 Nov 2019 14:03:15.726 * Successful partial resynchronization with master.
+73791:S 03 Nov 2019 14:03:15.726 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 03 Nov 2019 15:42:36.310 # MASTER timeout: no data nor PING received...
+73791:S 03 Nov 2019 15:42:36.311 # Connection with master lost.
+73791:S 03 Nov 2019 15:42:36.311 * Caching the disconnected master state.
+73791:S 03 Nov 2019 15:42:36.312 * Connecting to MASTER 127.0.0.1:6380
+73791:S 03 Nov 2019 15:42:36.313 * MASTER <-> REPLICA sync started
+73791:S 03 Nov 2019 15:42:36.314 * Non blocking connect for SYNC fired the event.
+73791:S 03 Nov 2019 15:42:36.314 * Master replied to PING, replication can continue...
+73791:S 03 Nov 2019 15:42:36.315 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:732064).
+73791:S 03 Nov 2019 15:42:36.316 * Successful partial resynchronization with master.
+73791:S 03 Nov 2019 15:42:36.316 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 04 Nov 2019 09:42:16.174 # MASTER timeout: no data nor PING received...
+73791:S 04 Nov 2019 09:42:16.175 # Connection with master lost.
+73791:S 04 Nov 2019 09:42:16.175 * Caching the disconnected master state.
+73791:S 04 Nov 2019 09:42:16.175 * Connecting to MASTER 127.0.0.1:6380
+73791:S 04 Nov 2019 09:42:16.176 * MASTER <-> REPLICA sync started
+73791:S 04 Nov 2019 09:42:16.176 * Non blocking connect for SYNC fired the event.
+73791:S 04 Nov 2019 09:42:16.177 * Master replied to PING, replication can continue...
+73791:S 04 Nov 2019 09:42:16.177 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:732092).
+73791:S 04 Nov 2019 09:42:16.178 * Successful partial resynchronization with master.
+73791:S 04 Nov 2019 09:42:16.179 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 04 Nov 2019 10:40:24.911 # MASTER timeout: no data nor PING received...
+73791:S 04 Nov 2019 10:40:25.092 # Connection with master lost.
+73791:S 04 Nov 2019 10:40:25.093 * Caching the disconnected master state.
+73791:S 04 Nov 2019 10:40:25.093 * Connecting to MASTER 127.0.0.1:6380
+73791:S 04 Nov 2019 10:40:25.094 * MASTER <-> REPLICA sync started
+73791:S 04 Nov 2019 10:40:25.094 * Non blocking connect for SYNC fired the event.
+73791:S 04 Nov 2019 10:40:25.094 * Master replied to PING, replication can continue...
+73791:S 04 Nov 2019 10:40:25.095 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:736334).
+73791:S 04 Nov 2019 10:40:25.095 * Successful partial resynchronization with master.
+73791:S 04 Nov 2019 10:40:25.096 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 04 Nov 2019 13:27:27.508 # MASTER timeout: no data nor PING received...
+73791:S 04 Nov 2019 13:27:28.096 # Connection with master lost.
+73791:S 04 Nov 2019 13:27:28.096 * Caching the disconnected master state.
+73791:S 04 Nov 2019 13:27:28.097 * Connecting to MASTER 127.0.0.1:6380
+73791:S 04 Nov 2019 13:27:28.098 * MASTER <-> REPLICA sync started
+73791:S 04 Nov 2019 13:27:28.098 * Non blocking connect for SYNC fired the event.
+73791:S 04 Nov 2019 13:27:28.101 * Master replied to PING, replication can continue...
+73791:S 04 Nov 2019 13:27:28.102 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:748766).
+73791:S 04 Nov 2019 13:27:28.104 * Successful partial resynchronization with master.
+73791:S 04 Nov 2019 13:27:28.106 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 04 Nov 2019 18:04:27.002 # MASTER timeout: no data nor PING received...
+73791:S 04 Nov 2019 18:04:28.105 # Connection with master lost.
+73791:S 04 Nov 2019 18:04:28.107 * Caching the disconnected master state.
+73791:S 04 Nov 2019 18:04:28.107 * Connecting to MASTER 127.0.0.1:6380
+73791:S 04 Nov 2019 18:04:28.108 * MASTER <-> REPLICA sync started
+73791:S 04 Nov 2019 18:04:28.108 * Non blocking connect for SYNC fired the event.
+73791:S 04 Nov 2019 18:04:28.111 * Master replied to PING, replication can continue...
+73791:S 04 Nov 2019 18:04:28.113 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:763648).
+73791:S 04 Nov 2019 18:04:28.114 * Successful partial resynchronization with master.
+73791:S 04 Nov 2019 18:04:28.114 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 04 Nov 2019 19:55:29.306 # MASTER timeout: no data nor PING received...
+73791:S 04 Nov 2019 19:55:30.098 # Connection with master lost.
+73791:S 04 Nov 2019 19:55:30.098 * Caching the disconnected master state.
+73791:S 04 Nov 2019 19:55:30.098 * Connecting to MASTER 127.0.0.1:6380
+73791:S 04 Nov 2019 19:55:30.099 * MASTER <-> REPLICA sync started
+73791:S 04 Nov 2019 19:55:30.099 * Non blocking connect for SYNC fired the event.
+73791:S 04 Nov 2019 19:55:30.100 * Master replied to PING, replication can continue...
+73791:S 04 Nov 2019 19:55:30.100 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:766112).
+73791:S 04 Nov 2019 19:55:30.101 * Successful partial resynchronization with master.
+73791:S 04 Nov 2019 19:55:30.102 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 04 Nov 2019 20:34:34.515 # MASTER timeout: no data nor PING received...
+73791:S 04 Nov 2019 20:34:35.088 # Connection with master lost.
+73791:S 04 Nov 2019 20:34:35.089 * Caching the disconnected master state.
+73791:S 04 Nov 2019 20:34:35.141 * Connecting to MASTER 127.0.0.1:6380
+73791:S 04 Nov 2019 20:34:35.145 * MASTER <-> REPLICA sync started
+73791:S 04 Nov 2019 20:34:35.159 * Non blocking connect for SYNC fired the event.
+73791:S 04 Nov 2019 20:34:35.159 * Master replied to PING, replication can continue...
+73791:S 04 Nov 2019 20:34:35.160 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:766126).
+73791:S 04 Nov 2019 20:34:35.161 * Successful partial resynchronization with master.
+73791:S 04 Nov 2019 20:34:35.161 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 04 Nov 2019 23:35:34.183 # Connection with master lost.
+73791:S 04 Nov 2019 23:35:34.247 * Caching the disconnected master state.
+73791:S 04 Nov 2019 23:35:34.363 * Connecting to MASTER 127.0.0.1:6380
+73791:S 04 Nov 2019 23:35:34.466 * MASTER <-> REPLICA sync started
+73791:S 04 Nov 2019 23:35:34.539 * Non blocking connect for SYNC fired the event.
+73791:S 04 Nov 2019 23:35:34.597 * Master replied to PING, replication can continue...
+73791:S 04 Nov 2019 23:35:34.690 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:766168).
+73791:S 04 Nov 2019 23:35:34.804 * Successful partial resynchronization with master.
+73791:S 04 Nov 2019 23:35:34.875 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 05 Nov 2019 01:23:36.740 # Connection with master lost.
+73791:S 05 Nov 2019 01:23:36.784 * Caching the disconnected master state.
+73791:S 05 Nov 2019 01:23:37.062 * Connecting to MASTER 127.0.0.1:6380
+73791:S 05 Nov 2019 01:23:37.102 * MASTER <-> REPLICA sync started
+73791:S 05 Nov 2019 01:23:37.144 * Non blocking connect for SYNC fired the event.
+73791:S 05 Nov 2019 01:23:37.169 * Master replied to PING, replication can continue...
+73791:S 05 Nov 2019 01:23:37.277 * Successful partial resynchronization with master.
+73791:S 05 Nov 2019 01:23:37.330 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73791:S 05 Nov 2019 03:11:38.727 # Connection with master lost.
+73791:S 05 Nov 2019 03:11:38.728 * Caching the disconnected master state.
+73791:S 05 Nov 2019 03:11:39.025 * Connecting to MASTER 127.0.0.1:6380
+73791:S 05 Nov 2019 03:11:39.025 * MASTER <-> REPLICA sync started
+73791:S 05 Nov 2019 03:11:39.026 * Non blocking connect for SYNC fired the event.
+73791:S 05 Nov 2019 03:11:39.026 * Master replied to PING, replication can continue...
+73791:S 05 Nov 2019 03:11:39.027 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:766196).
+73791:S 05 Nov 2019 03:11:39.028 * Successful partial resynchronization with master.
+73791:S 05 Nov 2019 03:11:39.028 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.

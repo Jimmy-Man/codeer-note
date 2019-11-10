@@ -1,0 +1,672 @@
+72484:C 01 Nov 2019 22:04:58.072 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+72484:C 01 Nov 2019 22:04:58.072 # Redis version=5.0.6, bits=64, commit=00000000, modified=0, pid=72484, just started
+72484:C 01 Nov 2019 22:04:58.073 # Configuration loaded
+72485:M 01 Nov 2019 22:04:58.074 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 72485
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+72485:M 01 Nov 2019 22:04:58.076 # Server initialized
+72485:M 01 Nov 2019 22:04:58.076 * Ready to accept connections
+72485:M 01 Nov 2019 22:04:58.831 * Replica 127.0.0.1:6381 asks for synchronization
+72485:M 01 Nov 2019 22:04:58.831 * Full resync requested by replica 127.0.0.1:6381
+72485:M 01 Nov 2019 22:04:58.832 * Starting BGSAVE for SYNC with target: disk
+72485:M 01 Nov 2019 22:04:58.832 * Background saving started by pid 72494
+72494:C 01 Nov 2019 22:04:58.833 * DB saved on disk
+72485:M 01 Nov 2019 22:04:58.887 * Background saving terminated with success
+72485:M 01 Nov 2019 22:04:58.888 * Synchronization with replica 127.0.0.1:6381 succeeded
+72485:M 01 Nov 2019 22:08:53.505 # User requested shutdown...
+72485:M 01 Nov 2019 22:08:53.505 * Saving the final RDB snapshot before exiting.
+72485:M 01 Nov 2019 22:08:53.506 * DB saved on disk
+72485:M 01 Nov 2019 22:08:53.506 * Removing the pid file.
+72485:M 01 Nov 2019 22:08:53.507 # Redis is now ready to exit, bye bye...
+72768:C 01 Nov 2019 22:44:57.567 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+72768:C 01 Nov 2019 22:44:57.567 # Redis version=5.0.6, bits=64, commit=00000000, modified=0, pid=72768, just started
+72768:C 01 Nov 2019 22:44:57.567 # Configuration loaded
+72769:M 01 Nov 2019 22:44:57.569 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 72769
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+72769:M 01 Nov 2019 22:44:57.571 # Server initialized
+72769:M 01 Nov 2019 22:44:57.572 * DB loaded from disk: 0.000 seconds
+72769:M 01 Nov 2019 22:44:57.572 * Ready to accept connections
+72769:S 01 Nov 2019 22:45:08.578 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+72769:S 01 Nov 2019 22:45:08.578 * REPLICAOF 127.0.0.1:6381 enabled (user request from 'id=3 addr=127.0.0.1:63628 fd=7 name=sentinel-bbe1e3ad-cmd age=10 idle=0 flags=x db=0 sub=0 psub=0 multi=3 qbuf=148 qbuf-free=32620 obl=36 oll=0 omem=0 events=r cmd=exec')
+72769:S 01 Nov 2019 22:45:08.582 # CONFIG REWRITE executed with success.
+72769:S 01 Nov 2019 22:45:08.713 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:45:08.714 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:45:08.715 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:45:08.715 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:45:08.716 * Trying a partial resynchronization (request d5f7fbefe22a5b26b9034b791bd0dbb3c37b5b65:1).
+72769:S 01 Nov 2019 22:45:08.718 * Full resync from master: ebf0c61c1b1ee5940f0ae19b7fd2b666b58e98ec:28011
+72769:S 01 Nov 2019 22:45:08.718 * Discarding previously cached master state.
+72769:S 01 Nov 2019 22:45:08.769 * MASTER <-> REPLICA sync: receiving 159890 bytes from master
+72769:S 01 Nov 2019 22:45:08.771 * MASTER <-> REPLICA sync: Flushing old data
+72769:S 01 Nov 2019 22:45:08.771 * MASTER <-> REPLICA sync: Loading DB in memory
+72769:S 01 Nov 2019 22:45:08.775 * MASTER <-> REPLICA sync: Finished with success
+72769:S 01 Nov 2019 22:54:28.629 # Connection with master lost.
+72769:S 01 Nov 2019 22:54:28.629 * Caching the disconnected master state.
+72769:S 01 Nov 2019 22:54:28.753 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:28.753 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:28.754 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:29.769 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:29.769 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:29.770 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:30.780 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:30.781 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:30.781 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:31.794 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:31.794 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:31.795 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:32.808 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:32.809 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:32.810 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:33.825 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:33.825 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:33.826 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:34.840 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:34.841 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:34.842 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:35.856 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:35.856 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:35.857 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:36.869 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:36.869 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:36.870 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:37.880 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:37.880 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:37.881 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:38.895 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:38.895 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:38.896 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:39.908 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:39.909 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:39.910 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:40.921 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:40.921 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:40.922 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:41.936 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:41.936 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:41.937 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:42.950 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:42.950 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:42.951 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:43.964 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:43.965 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:43.966 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:44.976 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:44.976 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:44.977 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:45.989 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:45.990 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:45.991 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:47.000 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:47.001 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:47.002 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:48.016 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:48.016 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:48.017 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:49.030 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:49.032 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:49.032 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:50.044 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:50.045 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:50.046 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:51.056 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:51.057 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:51.058 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:52.071 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:52.071 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:52.072 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:53.084 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:53.084 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:53.085 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:54.098 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:54.099 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:54.100 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:55.114 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:55.114 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:55.115 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:56.129 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:56.129 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:56.130 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:57.143 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:57.144 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:57.145 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:58.160 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:58.160 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:58.161 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:59.171 * Connecting to MASTER 127.0.0.1:6381
+72769:S 01 Nov 2019 22:54:59.171 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:54:59.172 # Error condition on socket for SYNC: Connection refused
+72769:S 01 Nov 2019 22:54:59.395 * REPLICAOF 127.0.0.1:6380 enabled (user request from 'id=3 addr=127.0.0.1:63628 fd=7 name=sentinel-bbe1e3ad-cmd age=601 idle=0 flags=x db=0 sub=0 psub=0 multi=3 qbuf=283 qbuf-free=32485 obl=36 oll=0 omem=0 events=r cmd=exec')
+72769:S 01 Nov 2019 22:54:59.398 # CONFIG REWRITE executed with success.
+72769:S 01 Nov 2019 22:55:00.186 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:55:00.187 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:55:00.188 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:55:00.188 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:55:00.189 * Trying a partial resynchronization (request ebf0c61c1b1ee5940f0ae19b7fd2b666b58e98ec:65930).
+72769:S 01 Nov 2019 22:55:00.190 * Successful partial resynchronization with master.
+72769:S 01 Nov 2019 22:55:00.190 # Master replication ID changed to b42c2471cd2a65cf4cc5b1318ea353d4c180fc92
+72769:S 01 Nov 2019 22:55:00.190 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+72769:S 01 Nov 2019 22:56:02.215 # Connection with master lost.
+72769:S 01 Nov 2019 22:56:02.215 * Caching the disconnected master state.
+72769:S 01 Nov 2019 22:56:02.939 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:02.940 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:02.941 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:02.941 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:02.942 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:02.942 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:03.950 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:03.951 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:03.951 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:03.951 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:03.952 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:03.952 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:04.964 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:04.965 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:04.966 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:04.966 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:04.967 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:04.967 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:05.979 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:05.980 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:05.981 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:05.981 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:05.982 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:05.983 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:06.995 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:06.995 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:06.996 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:06.997 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:06.997 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:06.998 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:08.008 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:08.009 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:08.010 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:08.010 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:08.010 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:08.011 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:09.019 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:09.020 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:09.020 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:09.021 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:09.021 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:09.022 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:10.031 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:10.031 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:10.032 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:10.032 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:10.033 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:10.033 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:11.046 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:11.046 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:11.047 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:11.048 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:11.048 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:11.049 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:12.059 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:12.060 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:12.060 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:12.061 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:12.061 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:12.062 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:13.074 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:13.075 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:13.076 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:13.076 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:13.077 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:13.078 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:14.086 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:14.087 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:14.088 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:14.088 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:14.089 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:14.090 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:15.099 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:15.099 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:15.100 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:15.100 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:15.101 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:15.101 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:16.110 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:16.110 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:16.111 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:16.112 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:16.112 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:16.112 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:17.119 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:17.120 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:17.121 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:17.121 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:17.122 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:17.122 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:18.134 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:18.135 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:18.136 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:18.137 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:18.137 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:18.138 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:19.149 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:19.150 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:19.151 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:19.151 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:19.152 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:19.152 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:20.165 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:20.165 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:20.166 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:20.167 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:20.167 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:20.168 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:21.179 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:21.180 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:21.181 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:21.181 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:21.182 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:21.183 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:22.194 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:22.194 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:22.195 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:22.195 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:22.196 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:22.196 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:23.207 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:23.208 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:23.209 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:23.209 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:23.210 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:23.211 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:24.221 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:24.222 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:24.222 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:24.223 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:24.223 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:24.224 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:25.232 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:25.233 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:25.234 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:25.234 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:25.235 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:25.235 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:26.245 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:26.245 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:26.246 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:26.247 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:26.247 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:26.248 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:27.259 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:27.259 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:27.260 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:27.260 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:27.261 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:27.261 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:28.272 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:28.273 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:28.274 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:28.274 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:28.275 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:28.275 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:29.288 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:29.288 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:29.289 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:29.290 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:29.290 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:29.291 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:30.301 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:30.302 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:30.302 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:30.303 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:30.303 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:30.304 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:31.314 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:31.314 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:31.315 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:31.315 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:31.316 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:31.316 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:32.328 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:32.329 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:32.329 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:32.330 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:32.330 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:32.331 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:33.341 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:33.342 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:33.343 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:33.343 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:33.344 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:33.344 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:34.356 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:34.356 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:34.357 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:34.358 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:34.358 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:34.359 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:35.370 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:35.371 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:35.372 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:35.372 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:35.373 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:35.373 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:36.382 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:36.383 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:36.383 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:36.384 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:36.384 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:36.385 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:37.394 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:37.395 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:37.396 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:37.396 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:37.397 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:37.397 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:38.407 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:38.408 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:38.409 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:38.410 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:38.410 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:38.411 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:39.419 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:39.419 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:39.420 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:39.421 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:39.421 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:39.422 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:40.434 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:40.434 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:40.435 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:40.435 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:40.436 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:40.436 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:41.448 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:41.448 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:41.449 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:41.450 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:41.451 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:41.451 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:42.461 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:42.462 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:42.463 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:42.463 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:42.463 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:42.464 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:43.474 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:43.475 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:43.475 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:43.476 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:43.477 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:43.477 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:44.483 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:44.483 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:44.483 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:44.483 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:44.484 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:44.484 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:45.494 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:45.495 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:45.496 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:45.496 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:45.497 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:45.497 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:46.509 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:46.509 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:46.510 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:46.511 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:46.511 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:46.512 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:47.523 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:47.523 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:47.524 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:47.525 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:47.525 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:47.526 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:48.537 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:48.538 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:48.539 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:48.540 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:48.540 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:48.541 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:49.550 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:49.551 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:49.552 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:49.552 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:49.553 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:49.553 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:50.563 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:50.564 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:50.565 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:50.565 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:50.566 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:50.566 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:51.574 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:51.575 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:51.576 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:51.576 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:51.576 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:51.577 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:52.586 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:52.587 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:52.588 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:52.588 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:52.589 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:52.589 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:53.600 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:53.601 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:53.602 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:53.602 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:53.603 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:53.604 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:54.617 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:54.617 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:54.618 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:54.619 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:54.619 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:54.620 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:55.630 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:55.631 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:55.632 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:55.632 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:55.633 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:55.633 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:56.645 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:56.645 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:56.646 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:56.647 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:56.647 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:56.648 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:57.660 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:57.660 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:57.661 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:57.662 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:57.662 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:57.663 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:58.675 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:58.675 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:58.676 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:58.677 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:58.678 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:58.678 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:56:59.691 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:56:59.691 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:56:59.692 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:56:59.693 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:56:59.693 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:56:59.694 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:S 01 Nov 2019 22:57:00.702 * Connecting to MASTER 127.0.0.1:6380
+72769:S 01 Nov 2019 22:57:00.703 * MASTER <-> REPLICA sync started
+72769:S 01 Nov 2019 22:57:00.704 * Non blocking connect for SYNC fired the event.
+72769:S 01 Nov 2019 22:57:00.704 * Master replied to PING, replication can continue...
+72769:S 01 Nov 2019 22:57:00.705 * Trying a partial resynchronization (request b42c2471cd2a65cf4cc5b1318ea353d4c180fc92:70492).
+72769:S 01 Nov 2019 22:57:00.705 * Master is currently unable to PSYNC but should be in the future: -NOMASTERLINK Can't SYNC while not connected with my master
+72769:M 01 Nov 2019 22:57:01.158 # Setting secondary replication ID to b42c2471cd2a65cf4cc5b1318ea353d4c180fc92, valid up to offset: 70492. New replication ID is 1e105c970ee8167788065f0717ddaa072ee3984e
+72769:M 01 Nov 2019 22:57:01.158 * Discarding previously cached master state.
+72769:M 01 Nov 2019 22:57:01.159 * MASTER MODE enabled (user request from 'id=9 addr=127.0.0.1:64355 fd=7 name=sentinel-bbe1e3ad-cmd age=121 idle=0 flags=x db=0 sub=0 psub=0 multi=3 qbuf=140 qbuf-free=32628 obl=36 oll=0 omem=0 events=r cmd=exec')
+72769:M 01 Nov 2019 22:57:01.162 # CONFIG REWRITE executed with success.
+72769:M 01 Nov 2019 22:57:01.547 * Replica 127.0.0.1:6380 asks for synchronization
+72769:M 01 Nov 2019 22:57:01.547 * Partial resynchronization request from 127.0.0.1:6380 accepted. Sending 0 bytes of backlog starting from offset 70492.
+72769:M 01 Nov 2019 23:29:42.879 * Replica 127.0.0.1:6381 asks for synchronization
+72769:M 01 Nov 2019 23:29:42.879 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for 'ddf3ce268e9aa522f12222ccec067944c4566482', my replication IDs are '1e105c970ee8167788065f0717ddaa072ee3984e' and 'b42c2471cd2a65cf4cc5b1318ea353d4c180fc92')
+72769:M 01 Nov 2019 23:29:42.879 * Starting BGSAVE for SYNC with target: disk
+72769:M 01 Nov 2019 23:29:42.880 * Background saving started by pid 72915
+72915:C 01 Nov 2019 23:29:42.885 * DB saved on disk
+72769:M 01 Nov 2019 23:29:42.967 * Background saving terminated with success
+72769:M 01 Nov 2019 23:29:42.967 * Synchronization with replica 127.0.0.1:6381 succeeded
+72769:M 02 Nov 2019 01:31:31.410 # Disconnecting timedout replica: 127.0.0.1:6380
+72769:M 02 Nov 2019 01:31:32.086 # Connection with replica 127.0.0.1:6380 lost.
+72769:M 02 Nov 2019 01:31:32.087 # Disconnecting timedout replica: 127.0.0.1:6381
+72769:M 02 Nov 2019 01:31:32.087 # Connection with replica client id #74 lost.
+72769:M 02 Nov 2019 01:31:32.091 * Replica 127.0.0.1:6381 asks for synchronization
+72769:M 02 Nov 2019 01:31:32.091 * Partial resynchronization request from 127.0.0.1:6381 accepted. Sending 135 bytes of backlog starting from offset 210810.
+72769:M 02 Nov 2019 01:31:32.429 * Replica 127.0.0.1:6380 asks for synchronization
+72769:M 02 Nov 2019 01:31:32.430 * Partial resynchronization request from 127.0.0.1:6380 accepted. Sending 0 bytes of backlog starting from offset 210945.
+72769:M 02 Nov 2019 02:51:42.370 # Connection with replica client id #76 lost.
+72769:M 02 Nov 2019 02:51:42.392 * Replica 127.0.0.1:6380 asks for synchronization
+72769:M 02 Nov 2019 02:51:42.394 * Partial resynchronization request from 127.0.0.1:6380 accepted. Sending 135 bytes of backlog starting from offset 211634.
+72769:M 02 Nov 2019 02:51:42.990 # Disconnecting timedout replica: 127.0.0.1:6381
+72769:M 02 Nov 2019 02:51:42.990 # Connection with replica 127.0.0.1:6381 lost.
+72769:M 02 Nov 2019 02:51:43.022 * Replica 127.0.0.1:6381 asks for synchronization
+72769:M 02 Nov 2019 02:51:43.022 * Partial resynchronization request from 127.0.0.1:6381 accepted. Sending 0 bytes of backlog starting from offset 211769.
+72769:M 02 Nov 2019 04:39:46.232 # Connection with replica client id #77 lost.
+72769:M 02 Nov 2019 04:39:46.260 * Replica 127.0.0.1:6380 asks for synchronization
+72769:M 02 Nov 2019 04:39:46.263 * Partial resynchronization request from 127.0.0.1:6380 accepted. Sending 135 bytes of backlog starting from offset 212458.
+72769:M 02 Nov 2019 04:39:46.682 # Disconnecting timedout replica: 127.0.0.1:6381
+72769:M 02 Nov 2019 04:39:46.682 # Connection with replica 127.0.0.1:6381 lost.
+72769:M 02 Nov 2019 04:39:46.774 * Replica 127.0.0.1:6381 asks for synchronization
+72769:M 02 Nov 2019 04:39:46.775 * Partial resynchronization request from 127.0.0.1:6381 accepted. Sending 0 bytes of backlog starting from offset 212593.
+72769:M 02 Nov 2019 06:27:50.601 # Disconnecting timedout replica: 127.0.0.1:6381
+72769:M 02 Nov 2019 06:27:50.601 # Connection with replica 127.0.0.1:6381 lost.
+72769:M 02 Nov 2019 06:27:50.705 * Replica 127.0.0.1:6381 asks for synchronization
+72769:M 02 Nov 2019 06:27:50.705 * Partial resynchronization request from 127.0.0.1:6381 accepted. Sending 14 bytes of backlog starting from offset 213417.
+72769:M 02 Nov 2019 08:15:53.706 # Disconnecting timedout replica: 127.0.0.1:6381
+72769:M 02 Nov 2019 08:15:53.707 # Connection with replica 127.0.0.1:6381 lost.
+72769:M 02 Nov 2019 08:15:53.810 * Replica 127.0.0.1:6381 asks for synchronization
+72769:M 02 Nov 2019 08:15:53.810 * Partial resynchronization request from 127.0.0.1:6381 accepted. Sending 0 bytes of backlog starting from offset 214255.
+72769:M 02 Nov 2019 08:30:02.897 # Disconnecting timedout replica: 127.0.0.1:6381
+72769:M 02 Nov 2019 08:30:02.899 # Connection with replica 127.0.0.1:6381 lost.
+72769:M 02 Nov 2019 08:30:03.000 * Replica 127.0.0.1:6381 asks for synchronization
+72769:M 02 Nov 2019 08:30:03.001 * Partial resynchronization request from 127.0.0.1:6381 accepted. Sending 0 bytes of backlog starting from offset 215079.
+72769:M 02 Nov 2019 10:05:20.918 # Disconnecting timedout replica: 127.0.0.1:6381
+72769:M 02 Nov 2019 10:05:21.085 # Connection with replica 127.0.0.1:6381 lost.
+72769:M 02 Nov 2019 10:05:21.104 * Replica 127.0.0.1:6381 asks for synchronization
+72769:M 02 Nov 2019 10:05:21.105 * Partial resynchronization request from 127.0.0.1:6381 accepted. Sending 135 bytes of backlog starting from offset 215768.
+72769:M 02 Nov 2019 10:38:13.613 # Disconnecting timedout replica: 127.0.0.1:6380
+72769:M 02 Nov 2019 10:38:14.103 # Connection with replica 127.0.0.1:6380 lost.
+72769:M 02 Nov 2019 10:38:14.112 # Disconnecting timedout replica: 127.0.0.1:6381
+72769:M 02 Nov 2019 10:38:14.125 # Connection with replica 127.0.0.1:6381 lost.
+72769:M 02 Nov 2019 10:38:14.152 * Replica 127.0.0.1:6380 asks for synchronization
+72769:M 02 Nov 2019 10:38:14.152 * Partial resynchronization request from 127.0.0.1:6380 accepted. Sending 135 bytes of backlog starting from offset 216592.
+72769:M 02 Nov 2019 10:38:14.629 * Replica 127.0.0.1:6381 asks for synchronization
+72769:M 02 Nov 2019 10:38:14.629 * Partial resynchronization request from 127.0.0.1:6381 accepted. Sending 0 bytes of backlog starting from offset 216727.
+72769:M 02 Nov 2019 10:53:29.105 # Disconnecting timedout replica: 127.0.0.1:6380
+72769:M 02 Nov 2019 10:53:30.103 # Connection with replica 127.0.0.1:6380 lost.
+72769:M 02 Nov 2019 10:53:30.103 # Disconnecting timedout replica: 127.0.0.1:6381
+72769:M 02 Nov 2019 10:53:30.104 # Connection with replica 127.0.0.1:6381 lost.
+72769:M 02 Nov 2019 10:53:30.139 * Replica 127.0.0.1:6380 asks for synchronization
+72769:M 02 Nov 2019 10:53:30.147 * Partial resynchronization request from 127.0.0.1:6380 accepted. Sending 0 bytes of backlog starting from offset 252690.
+72769:M 02 Nov 2019 10:53:30.621 * Replica 127.0.0.1:6381 asks for synchronization
+72769:M 02 Nov 2019 10:53:30.621 * Partial resynchronization request from 127.0.0.1:6381 accepted. Sending 0 bytes of backlog starting from offset 252690.
+72769:M 02 Nov 2019 11:13:31.204 # Disconnecting timedout replica: 127.0.0.1:6380
+72769:M 02 Nov 2019 11:13:32.094 # Connection with replica 127.0.0.1:6380 lost.
+72769:M 02 Nov 2019 11:13:32.094 # Disconnecting timedout replica: 127.0.0.1:6381
+72769:M 02 Nov 2019 11:13:32.095 # Connection with replica 127.0.0.1:6381 lost.
+72769:M 02 Nov 2019 11:13:32.225 * Replica 127.0.0.1:6380 asks for synchronization
+72769:M 02 Nov 2019 11:13:32.225 * Partial resynchronization request from 127.0.0.1:6380 accepted. Sending 0 bytes of backlog starting from offset 279156.
+72769:M 02 Nov 2019 11:13:32.738 * Replica 127.0.0.1:6381 asks for synchronization
+72769:M 02 Nov 2019 11:13:32.738 * Partial resynchronization request from 127.0.0.1:6381 accepted. Sending 0 bytes of backlog starting from offset 279156.
+72769:M 02 Nov 2019 11:35:28.522 * 1 changes in 900 seconds. Saving...
+72769:M 02 Nov 2019 11:35:28.523 * Background saving started by pid 73602
+73602:C 02 Nov 2019 11:35:28.530 * DB saved on disk
+72769:M 02 Nov 2019 11:35:28.624 * Background saving terminated with success
+72769:M 02 Nov 2019 11:35:45.934 # User requested shutdown...
+72769:M 02 Nov 2019 11:35:45.934 * Saving the final RDB snapshot before exiting.
+72769:M 02 Nov 2019 11:35:45.939 * DB saved on disk
+72769:M 02 Nov 2019 11:35:45.939 * Removing the pid file.
+72769:M 02 Nov 2019 11:35:45.940 # Redis is now ready to exit, bye bye...
+73744:C 02 Nov 2019 12:27:29.419 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+73744:C 02 Nov 2019 12:27:29.419 # Redis version=5.0.6, bits=64, commit=00000000, modified=0, pid=73744, just started
+73744:C 02 Nov 2019 12:27:29.419 # Configuration loaded
+73745:M 02 Nov 2019 12:27:29.421 * Increased maximum number of open files to 10032 (it was originally set to 256).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 73745
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+73745:M 02 Nov 2019 12:27:29.422 # Server initialized
+73745:M 02 Nov 2019 12:27:29.425 * DB loaded from disk: 0.003 seconds
+73745:M 02 Nov 2019 12:27:29.425 * Ready to accept connections
+73745:S 02 Nov 2019 12:27:40.070 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+73745:S 02 Nov 2019 12:27:40.070 * REPLICAOF 127.0.0.1:6380 enabled (user request from 'id=3 addr=127.0.0.1:54064 fd=7 name=sentinel-bbe1e3ad-cmd age=11 idle=0 flags=x db=0 sub=0 psub=0 multi=3 qbuf=148 qbuf-free=32620 obl=36 oll=0 omem=0 events=r cmd=exec')
+73745:S 02 Nov 2019 12:27:40.073 # CONFIG REWRITE executed with success.
+73745:S 02 Nov 2019 12:27:40.522 * Connecting to MASTER 127.0.0.1:6380
+73745:S 02 Nov 2019 12:27:40.522 * MASTER <-> REPLICA sync started
+73745:S 02 Nov 2019 12:27:40.523 * Non blocking connect for SYNC fired the event.
+73745:S 02 Nov 2019 12:27:40.524 * Master replied to PING, replication can continue...
+73745:S 02 Nov 2019 12:27:40.524 * Trying a partial resynchronization (request ebd89a460b5ac18de0244bff4a458df75bb27b8b:1).
+73745:S 02 Nov 2019 12:27:40.526 * Full resync from master: 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:572627
+73745:S 02 Nov 2019 12:27:40.526 * Discarding previously cached master state.
+73745:S 02 Nov 2019 12:27:40.623 * MASTER <-> REPLICA sync: receiving 159933 bytes from master
+73745:S 02 Nov 2019 12:27:40.624 * MASTER <-> REPLICA sync: Flushing old data
+73745:S 02 Nov 2019 12:27:40.625 * MASTER <-> REPLICA sync: Loading DB in memory
+73745:S 02 Nov 2019 12:27:40.627 * MASTER <-> REPLICA sync: Finished with success
+73745:S 02 Nov 2019 12:42:30.058 * 1 changes in 900 seconds. Saving...
+73745:S 02 Nov 2019 12:42:30.059 * Background saving started by pid 73812
+73812:C 02 Nov 2019 12:42:30.065 * DB saved on disk
+73745:S 02 Nov 2019 12:42:30.160 * Background saving terminated with success
+73745:S 02 Nov 2019 13:34:14.003 # MASTER timeout: no data nor PING received...
+73745:S 02 Nov 2019 13:34:15.101 # Connection with master lost.
+73745:S 02 Nov 2019 13:34:15.102 * Caching the disconnected master state.
+73745:S 02 Nov 2019 13:34:15.103 * Connecting to MASTER 127.0.0.1:6380
+73745:S 02 Nov 2019 13:34:15.106 * MASTER <-> REPLICA sync started
+73745:S 02 Nov 2019 13:34:15.107 * Non blocking connect for SYNC fired the event.
+73745:S 02 Nov 2019 13:34:15.108 * Master replied to PING, replication can continue...
+73745:S 02 Nov 2019 13:34:15.109 * Trying a partial resynchronization (request 6b122a1c5cd2bc5323d48f721cc3e9445d4a3d70:698310).
+73745:S 02 Nov 2019 13:34:15.120 * Successful partial resynchronization with master.
+73745:S 02 Nov 2019 13:34:15.121 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+73745:S 02 Nov 2019 15:47:20.025 # User requested shutdown...
+73745:S 02 Nov 2019 15:47:20.025 * Saving the final RDB snapshot before exiting.
+73745:S 02 Nov 2019 15:47:20.031 * DB saved on disk
+73745:S 02 Nov 2019 15:47:20.031 * Removing the pid file.
+73745:S 02 Nov 2019 15:47:20.032 # Redis is now ready to exit, bye bye...
