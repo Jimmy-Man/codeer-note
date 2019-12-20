@@ -1,7 +1,6 @@
 git
 ====
 
-
 -------------------------------------------------
 生成sshkey:
 ```
@@ -19,4 +18,18 @@ cat ~/.ssh/id_rsa.pub
   ## 以码云为例
   ssh -T git@gitee.com
 ```
+
+修改项目根目录下的.git/config `remote "origin"` 从HTTPS方式改为git请求方式
+```bash
+# .git/config
+[remote "origin"]
+	url = https://github.com/Jimmy-Man/codeer-note.git
+
+```
+改为
+```bash
+[remote "origin"]
+	url = gut@github.com:Jimmy-Man/codeer-note.git
+```
+
 -------------------------------------------------

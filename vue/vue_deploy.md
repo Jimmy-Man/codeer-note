@@ -28,7 +28,7 @@ Vue应用部署
         # }
 
        #代理后台接口
-         location /api/ {
+        location /api/ {
              proxy_pass http://127.0.0.1:9080;#转发请求的地址
              proxy_connect_timeout 6000;#链接超时设置
              proxy_read_timeout 6000;#访问接口超时设置
@@ -43,4 +43,15 @@ Vue应用部署
         }
     }
 ```
-* 
+
+
+
+#### jenkins docker
+docker run \
+  --rm \
+  -u root \
+  -p 8090:8080 \
+  -v jenkins-data:/var/jenkins_home \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v "$HOME":/home \
+  jenkinsci/blueocean

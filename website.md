@@ -11,8 +11,9 @@ https://web.dev/
 
 #### 项目管理工具
 * [禪道](https://www.zentao.net/)
-
-
+* [OpenProject](https://www.openproject.org/)
+* [Confluence Atlassian](https://www.atlassian.com/zh)
+* [itest](http://120.78.0.137/rsf/site/itest/index.html)
 ---------------------------------------------
 
 #### 部署工具
@@ -20,5 +21,7 @@ https://web.dev/
 * [Deployer](https://deployer.org/)
 * [Jenkins](https://jenkins.io/zh/)
 
+
 #### PHP
 * [packagist包工具](https://packagist.org)
+* 
