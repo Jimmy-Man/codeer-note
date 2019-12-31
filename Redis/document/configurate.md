@@ -9,6 +9,7 @@ Units单位
 * 对大小写不敏感
 
 INCLUDES
+* bind 
 
 GENERAL
 * daemonize yes
@@ -64,3 +65,8 @@ LIMITS限制
   - 设置样本数量，LRU算法和最小TTL算法都并非是精确的算法，而是估算值，所以你可以设置样本的大小，redis会默认检查这么多个key并选择期中LRU的那个
 * APPEND ONLY MODE追加
 
+### 配置redis外网可以访问
+redis 默认只可以本机访问,只绑定了127.0.0.1，想要设置外网访问主要设置`redis.config`的`bind`参数
+注意:`bind表示的是指定本机可以接受连接的网卡地址并不是外部服务器的IP`
+
+如何确定
