@@ -6,4 +6,5 @@ go install
 go test 
 ```
 
-[语言规范](./document/spec.md)
+[语言规范](./document/spec.md)  
+[协程goroute](./document/goroute.md)  

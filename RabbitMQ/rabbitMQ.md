@@ -26,3 +26,4 @@ RabbitMQ整体架构
 ![frame](./source/frame.png)
 
 [RabbitMQ安装](./document/install.md)
+[Exchange交换机](./document/exchange.md)
