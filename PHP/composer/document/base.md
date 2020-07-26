@@ -13,7 +13,7 @@ composer
 ### `composer.json`项目安装
 要开始在你的项目中使用`Composer`，你只需要一个`composer.json`文件。该文件包含了项目的依赖和其它的一些元数据。
 
-### 关于`require`Key
+### 关于`require` Key
 `composer.json`文件中指定`require`的值,即告诉`composer`项目需要依赖那些包
 ```json
 // composer.json

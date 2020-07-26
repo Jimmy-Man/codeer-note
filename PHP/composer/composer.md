@@ -19,6 +19,6 @@ require 'vendor/autoload.php';
 
 ## 详细教程
 [基本用法](./document/base.md)  
-[库(资源包)](./document/libraries.md)
-[命令行](./document/cli.md)
-[composer.json架构](./document/schema.md)
+[库(资源包)](./document/libraries.md)  
+[命令行](./document/cli.md)  
+[composer.json架构](./document/schema.md)  
